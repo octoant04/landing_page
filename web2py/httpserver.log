@@ -504,3 +504,116 @@
 127.0.0.1, 2021-12-25 00:54:09, GET, /welcome/static/js/web2py-bootstrap4.js, HTTP/1.1, 200, 0.000000
 127.0.0.1, 2021-12-25 00:54:10, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000994
 127.0.0.1, 2021-12-25 00:54:11, GET, /welcome/static/images/favicon.ico, HTTP/1.1, 200, 0.006060
+127.0.0.1, 2021-12-25 01:12:22, GET, /, HTTP/1.1, 303, 0.001009
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/default/index, HTTP/1.1, 200, 0.092199
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/css/bootstrap.min.css, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/css/web2py-bootstrap4.css, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/modernizr-2.8.3.min.js, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/css/calendar.css, HTTP/1.1, 200, 0.008008
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/jquery.js, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/calendar.js, HTTP/1.1, 200, 0.003466
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/web2py.js, HTTP/1.1, 200, 0.000998
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/bootstrap.bundle.min.js, HTTP/1.1, 200, 0.001993
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/js/web2py-bootstrap4.js, HTTP/1.1, 200, 0.000997
+127.0.0.1, 2021-12-25 01:12:23, GET, /welcome/static/images/background.jpg, HTTP/1.1, 404, 0.000997
+127.0.0.1, 2021-12-25 01:12:24, GET, /welcome/static/images/favicon.ico, HTTP/1.1, 200, 0.002132
+127.0.0.1, 2021-12-25 01:12:36, GET, /pitch/default/index, HTTP/1.1, 500, 1.131488
+127.0.0.1, 2021-12-25 01:12:36, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/default/ticket/pitch/127.0.0.1.2021-12-25.01-12-35.613193fe-43d5-4e84-8cb7-a690c90cbe2f, HTTP/1.1, 303, 0.779258
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/default/index, HTTP/1.1, 200, 0.209329
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/css/calendar.css, HTTP/1.1, 200, 0.003756
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/js/calendar.js, HTTP/1.1, 200, 0.050160
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/plugin_multiselect/multi-select.css, HTTP/1.1, 200, 0.008173
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/js/jquery.js, HTTP/1.1, 200, 0.067704
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/plugin_statebutton/css/bootstrap-switch.css, HTTP/1.1, 200, 0.008368
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/css/bootstrap.min.css, HTTP/1.1, 200, 0.010149
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/css/bootstrap_essentials.css, HTTP/1.1, 200, 0.009846
+127.0.0.1, 2021-12-25 01:12:39, GET, /admin/static/_2.21.1/css/bootstrap-responsive.min.css, HTTP/1.1, 200, 0.009911
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/plugin_multiselect/start.js, HTTP/1.1, 200, 0.016674
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/plugin_multiselect/jquery.multi-select.js, HTTP/1.1, 200, 0.017723
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/js/web2py.js, HTTP/1.1, 200, 0.041868
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/plugin_statebutton/js/bootstrap-switch.js, HTTP/1.1, 200, 0.021350
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/js/bootstrap.min.js, HTTP/1.1, 200, 0.035619
+127.0.0.1, 2021-12-25 01:12:40, GET, /admin/static/_2.21.1/images/questions.png, HTTP/1.1, 200, 0.001995
+127.0.0.1, 2021-12-25 01:12:40, GET, /favicon.ico, HTTP/1.1, 400, 0.001000
+127.0.0.1, 2021-12-25 01:12:46, POST, /admin/default/index, HTTP/1.1, 303, 0.017698
+127.0.0.1, 2021-12-25 01:12:46, GET, /admin/default/ticket/pitch/127.0.0.1.2021-12-25.01-12-35.613193fe-43d5-4e84-8cb7-a690c90cbe2f, HTTP/1.1, 200, 0.149034
+127.0.0.1, 2021-12-25 01:12:46, GET, /admin/static/_2.21.1/images/help.png, HTTP/1.1, 200, 0.001720
+127.0.0.1, 2021-12-25 01:12:47, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:14:34, GET, /admin/default/ticket/pitch/127.0.0.1.2021-12-25.01-12-35.613193fe-43d5-4e84-8cb7-a690c90cbe2f, HTTP/1.1, 200, 0.138621
+127.0.0.1, 2021-12-25 01:14:34, GET, /favicon.ico, HTTP/1.1, 400, 0.000999
+127.0.0.1, 2021-12-25 01:14:39, GET, /pitch/default/index, HTTP/1.1, 200, 0.095765
+127.0.0.1, 2021-12-25 01:14:39, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:14:40, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:15:00, GET, /pitch/default/index, HTTP/1.1, 200, 0.064577
+127.0.0.1, 2021-12-25 01:15:00, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:15:01, GET, /favicon.ico, HTTP/1.1, 400, 0.000287
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/default/index, HTTP/1.1, 200, 0.075923
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/css/calendar.css, HTTP/1.1, 200, 0.001993
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/css/skeleton.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/js/calendar.js, HTTP/1.1, 200, 0.034727
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/js/web2py.js, HTTP/1.1, 200, 0.033683
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/js/jquery.js, HTTP/1.1, 200, 0.070763
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000997
+127.0.0.1, 2021-12-25 01:16:44, GET, /pitch/static/css/skeleton.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2021-12-25 01:16:45, GET, /favicon.ico, HTTP/1.1, 400, 0.000997
+127.0.0.1, 2021-12-25 01:17:38, GET, /pitch/default/index, HTTP/1.1, 200, 0.082030
+127.0.0.1, 2021-12-25 01:17:39, GET, /pitch/static/css/skeleton.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2021-12-25 01:17:39, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000997
+127.0.0.1, 2021-12-25 01:17:39, GET, /pitch/static/css/skeleton.css, HTTP/1.1, 404, 0.000000
+127.0.0.1, 2021-12-25 01:17:39, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:21:47, GET, /pitch/default/index, HTTP/1.1, 200, 0.065874
+127.0.0.1, 2021-12-25 01:21:47, GET, /pitch/static/css/web2py.css, HTTP/1.1, 200, 0.012973
+127.0.0.1, 2021-12-25 01:21:47, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:21:47, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:22:24, GET, /pitch/default/index, HTTP/1.1, 200, 0.066035
+127.0.0.1, 2021-12-25 01:22:24, GET, /pitch/static/css/style.css, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:22:24, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:22:25, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:22:37, GET, /favicon.ico, HTTP/1.1, 400, 0.002151
+127.0.0.1, 2021-12-25 01:26:26, GET, /pitch/default/index, HTTP/1.1, 200, 0.076566
+127.0.0.1, 2021-12-25 01:26:26, GET, /pitch/static/css/style.css, HTTP/1.1, 304, 0.005830
+127.0.0.1, 2021-12-25 01:26:26, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000998
+127.0.0.1, 2021-12-25 01:26:27, GET, /favicon.ico, HTTP/1.1, 400, 0.001223
+127.0.0.1, 2021-12-25 01:26:49, GET, /pitch/default/index, HTTP/1.1, 200, 0.073010
+127.0.0.1, 2021-12-25 01:26:49, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.001032
+127.0.0.1, 2021-12-25 01:26:50, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:27:24, GET, /pitch/default/index, HTTP/1.1, 200, 0.065035
+127.0.0.1, 2021-12-25 01:27:24, GET, /pitch/static/css/style.css, HTTP/1.1, 304, 0.000000
+127.0.0.1, 2021-12-25 01:27:24, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.001032
+127.0.0.1, 2021-12-25 01:27:25, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:27:54, GET, /pitch/default/index, HTTP/1.1, 200, 0.087487
+127.0.0.1, 2021-12-25 01:27:54, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:27:55, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:28:35, GET, /pitch/default/{% url 'index' %}, HTTP/1.1, 400, 0.001047
+127.0.0.1, 2021-12-25 01:28:35, GET, /favicon.ico, HTTP/1.1, 400, 0.000998
+127.0.0.1, 2021-12-25 01:28:37, GET, /pitch/default/index, HTTP/1.1, 200, 0.070485
+127.0.0.1, 2021-12-25 01:28:37, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:30:16, GET, /pitch/default/index, HTTP/1.1, 500, 0.222600
+127.0.0.1, 2021-12-25 01:30:17, GET, /favicon.ico, HTTP/1.1, 400, 0.001301
+127.0.0.1, 2021-12-25 01:30:34, GET, /pitch/default/index, HTTP/1.1, 500, 0.212012
+127.0.0.1, 2021-12-25 01:30:35, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:30:46, GET, /pitch/default/index, HTTP/1.1, 500, 0.200129
+127.0.0.1, 2021-12-25 01:30:47, GET, /favicon.ico, HTTP/1.1, 400, 0.000545
+127.0.0.1, 2021-12-25 01:30:52, GET, /pitch/default/index, HTTP/1.1, 500, 0.175198
+127.0.0.1, 2021-12-25 01:30:53, GET, /favicon.ico, HTTP/1.1, 400, 0.000982
+127.0.0.1, 2021-12-25 01:30:58, GET, /pitch/default/index, HTTP/1.1, 200, 0.073793
+127.0.0.1, 2021-12-25 01:30:59, GET, /pitch/static/css/style.css, HTTP/1.1, 304, 0.000998
+127.0.0.1, 2021-12-25 01:30:59, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:30:59, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:37:36, GET, /pitch/default/index, HTTP/1.1, 200, 0.087566
+127.0.0.1, 2021-12-25 01:37:36, GET, /pitch/static/css/style.css, HTTP/1.1, 304, 0.003933
+127.0.0.1, 2021-12-25 01:37:36, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000997
+127.0.0.1, 2021-12-25 01:37:37, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:44:13, GET, /pitch/default/index, HTTP/1.1, 200, 0.080193
+127.0.0.1, 2021-12-25 01:44:13, GET, /pitch/static/css/style.css, HTTP/1.1, 304, 0.000998
+127.0.0.1, 2021-12-25 01:44:13, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:44:14, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:44:21, GET, /pitch/default/index, HTTP/1.1, 200, 0.094870
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/static/js/jquery.js, HTTP/1.1, 200, 0.001005
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/static/css/calendar.css, HTTP/1.1, 200, 0.001881
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/static/js/calendar.js, HTTP/1.1, 200, 0.000998
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/static/css/style.css, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/static/js/web2py.js, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2021-12-25 01:44:22, GET, /pitch/default/{% static '_app/images/face-1.png' %}, HTTP/1.1, 400, 0.000000
+127.0.0.1, 2021-12-25 01:44:22, GET, /favicon.ico, HTTP/1.1, 400, 0.000000
