@@ -40,6 +40,8 @@ def start_web2py_server():
              path, "runserver", '-a "passwd"', '-p 8001'
     ])
 
+    #unit test
+
 def run_functional_tests(pattern=None):
     print ('running tests')
     if pattern is None:

@@ -1,12 +1,50 @@
 *{
-	box-sizing: border-box;
-	margin: 0;
-}
+	box-sizing: border-box; margin: 0}
 body {
-	height: 100%;
-	overflow-x: hidden;
-	font-family: sheriff;
+	height: 100%; overflow-x: hidden; font-family: sheriff}
+
+
+/** these MUST stay **/
+a {text-decoration:none; white-space:nowrap}
+a:hover {text-decoration:underline}
+a.button {text-decoration:none}
+h1,h2,h3,h4,h5,h6 {display:block;}
+h1 {font-size:2.00em}
+h2 {font-size:1.80em}
+h3 {font-size:1.50em}
+h4 {font-size:1.50em}
+h5 {font-size:1.25em}
+h6 {font-size:1.12em}
+th,label {font-weight:bold; white-space:nowrap;}
+td,th {text-align:left; padding:2px 5px 2px 5px}
+th {vertical-align:middle; border-right:1px solid white}
+td {vertical-align:top}
+form table tr td label {text-align:left}
+p,table,ol,ul {padding:0; margin: 0.75em 0}
+p {text-align:justify}
+ol, ul {list-style-position:outside; margin-left:2em}
+
+span,input,select,textarea,button,label,a {display:inline}
+img {border:0}
+blockquote,blockquote p,p blockquote {
+  font-style:italic; margin:0.5em 30px 0.5em 30px; font-size:0.9em}
+i,em {font-style:italic}
+strong {font-weight:bold}
+small {font-size:0.8em}
+code {font-family:Courier}
+textarea {width:100%}
+video {width:400px}
+audio {width:200px}
+[type="text"], [type="password"], select {
+  margin-right: 5px; width: 300px;
 }
+.w2p_hidden {display:none;visibility:visible}
+.right {float:right; text-align:right}
+.left {float:left; text-align:left}
+.center {width:100%; text-align:center; vertical-align:middle}
+/** end **/
+
+
 #nav {
 	background-color: White;
 	z-index: 2;
