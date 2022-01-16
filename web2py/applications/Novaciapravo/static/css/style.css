@@ -1,0 +1,10 @@
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #ff4917 !important;
+    border-color: #ff4917;
+
+    width: 184px;
+    height: 58px;
+}
+.bg-light {
+	background-color: #F2F2F2 !important;
+}

@@ -1,0 +1,111 @@
+{{extend 'layout.html'}}
+{{response.files.append(URL('static','css/style.css'))}}
+
+{{block header}}
+<div class="jumbotron jumbotron-fluid background" style="background-color: #333; color:white; padding:30px;word-wrap:break-word;">
+  <div class="container center">
+    <h1 class="display-5">Решаем проблемы</h1>
+  </div>
+</div>
+{{end}}
+
+ <div class="main-1">
+      <div class="content content-main-1">
+        <div class="header header-main-1"><h3>Мы ценим Ваше время, поэтому кратко, что Вам нужно о нас знать:</h3></div>
+        <div class="info info-main-1">
+          <ol class="info-list" style="word-wrap:break-word;">
+            <li>{{=T('Мы специализируемся на гражданских делах и имеем наработанную практику')}}</li>
+            <li>{{=T('Наши сотрудники - квалифицированные юристы, способные решить любую проблему')}}</li>
+            <li>{{=T('Вы получаете гарантии максимальной отдачи, закрепленные в договоре')}}</li> <p style="margin-top: -20px; font-size: 18px; padding-left: 5px;">готовы разобрать договор построчно при подписании на консультации</p>
+            <li>{{=T('Вы будете знать всё о своем деле и получать персональные уведомления в Вашем личном кабинете')}}</li>
+            <li>{{=T('В случае сомнений - свяжитесь с нами удобным Вам способом, мы ответим на любые вопросы. Это бесплатно. ')}}</li>
+          </ol>
+              <p>Нажмите на любой пункт, для перехода к развернотому обоснованию</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-2">
+     <div class="nonmobile content content-main-2">
+        <div class="nonmobile header header-main-2"><h3>О нашей работе:</h3></div>
+         <div class="right-info-main-2">
+            <p id="textbox" style="color: white">Мы работаем в сфере оказания юридических услуг с 2018 года.
+      За время нашей работы, мы нашли Вы рассказываете свою проблему, мы её разбираем, предлагаем Вам варианты решения, оперативно действуем по согласованному плану
+      Вы можете бесплатно получить квалифицированную юридическую помощь, записавшись на консультацию в нашем офисе, либо онлайн по ссылке ниже </p>
+          <div class="content content-main-3">
+            <button class="post-header-button view-all-button" href="{{=URL('default','#')}}">Открыть календарь</button>
+            <!--- <a class="btn btn-primary" href="{{=URL('default','#')}}">{{=T("Открыть календарь")}}</a> --->
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="lead">{{=T('Мы ценим Ваше время, поэтому кратко, что Вам нужно о нас знать:')}}</p>
+    <ol style="word-wrap:break-word;">
+      <li>{{=T('Мы специализируемся на гражданских делах и имеем наработанную практику')}}</li>
+      <li>{{=T('Наши сотрудники - квалифицированные юристы, способные решить любую проблему')}}</li>
+      <li>{{=T('Вы получаете гарантии максимальной отдачи, закрепленные в договоре - готовы разобрать договор построчно при подписании на консультации')}}</li>
+      <li>{{=T('Вы будете знать всё о своем деле и получать персональные уведомления в Вашем личном кабинете')}}</li>
+      <li>{{=T('В случае сомнений - свяжитесь с нами любым удобным способом, мы ответим на любые вопросы. Это бесплатно. ')}}</li>
+    </ol>
+
+    
+
+    <div>
+      <p class="lead">{{=T('О нас:')}}</p>
+      <p>Мы работаем в сфере оказания юридических услуг с 2018 года.</p>
+      <p>За время нашей работы, мы нашли </p>
+      <p>Вы рассказываете свою проблему, мы её разбираем, предлагаем Вам варианты решения, оперативно действуем по согласованному плану</p>
+      <p>Вы можете бесплатно получить квалифицированную юридическую помощь, записавшись на консультацию в нашем офисе, либо онлайн по ссылке ниже</p>
+
+    </div>
+
+    <div>
+      <p class="lead">{{=T('Немного о нас')}}</p>
+      <p>Мы тщательно подходим к подбору сотрудников</p>
+      <p>Обратившись к нам, Вы можете быть уверены в квалификации и способностям </p>
+    </div>
+
+    <div>
+      <p class="lead">{{=T('О том как мы работаем:')}}</p>
+      <p>Мы дружим с нашими клиентами</p>
+      <p>Обращаясь к нам за помощью, вы находите друга, который всегда на Вашей стороне</p>
+      <p>Вы рассказываете свою проблему, мы её разбираем, предлагаем Вам варианты решения, оперативно действуем по согласованному плану</p>
+      <p>Вы можете бесплатно получить квалифицированную юридическую помощь, записавшись на консультацию в нашем офисе, либо онлайн по ссылке ниже</p>
+      
+    </div>
+
+    <p class="lead">{{=T('Мы можем помочь:')}}</p>
+    <ol style="word-wrap:break-word;">
+      <li>{{=T('Вернуть деньги за страховку')}}</li>
+      <li>{{=T('Решить жилищный спор')}}</li>
+      <li>{{=T('Взыскать денежные средства по договору')}}</li>
+      <li>{{=T('Защитить Ваши интересы в арбитражном суде')}}</li>
+      <li>{{=T('You can modify this application and adapt it to your needs')}}</li>
+    </ol>
+
+   
+    <div>
+      <p class="lead">{{=T('')}}</p>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" style="padding:30px;word-wrap:break-word;">
+      <div class="container center">
+        <a class="btn btn-primary" href="{{=URL('admin','default','index')}}">
+          <i class="fa fa-cog"></i>
+          {{=T("admin")}}
+        </a>
+        <a class="btn btn-secondary" href="{{=URL('examples','default','index')}}">{{=T("Online examples")}}</a>
+        <a class="btn btn-secondary" href="http://web2py.com">web2py.com</a>
+        <a class="btn btn-secondary" href="http://web2py.com/book">{{=T('Documentation')}}</a>
+        <a class="btn btn-secondary" href="{{=URL('default','api_get_user_email')}}">{{=T('API Example')}}</a>
+        <a class="btn btn-secondary" href="{{=URL('default','grid/auth_user')}}">{{=T('Grid Example')}}</a>
+        <a class="btn btn-secondary" href="{{=URL('default','wiki')}}">{{=T('Wiki Example')}}</a>
+      </div>
+    </div>
+    
+
+
+
+
