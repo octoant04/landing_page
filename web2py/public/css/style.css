@@ -1,0 +1,92 @@
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #ff4917 !important;
+    border-color: #ff4917;
+
+    width: 184px;
+    height: 58px;
+}
+.bg-light {
+	background-color: #F2F2F2 !important;
+}
+#btn-services {
+	border-radius: 1px !important;
+	width: 100%;
+
+}
+#service-container:hover {
+	border: 1px solid #212529 !important;
+} 
+
+.person {
+	width: 100%;
+    max-width: 296px;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+#person-inner::before {
+	content: '';
+    display: block;
+    width: 234px;
+    height: 330px;
+    background: #ff4917;
+    border: 1px solid #ff4917;
+    
+    position: absolute;
+    top: -70px;
+    left: -80px;
+    
+}
+
+#person-inner {
+	position: relative;
+    z-index: 1;
+}
+
+#person-photo {
+	position: relative;
+    height: 360px;
+}
+
+#block-heading::before {
+	content: '';
+	width: 150px;
+	height: 2px;
+	background: #ff4917;
+	position: absolute;
+
+}
+
+#phone-footer {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 4.25em;
+    margin-bottom: 10px;
+
+}
+
+.accordion-header {
+	text-align: center;
+}
+
+.accordion-button {
+	display: inline-block;
+	
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.fly-form {
+	border-right: 1px solid #eff1f5;
+    position: fixed;
+    right: 0;
+    top: 168px;
+    left: auto;
+    z-index: 120;
+    background-color: #ff4917;
+}
+
