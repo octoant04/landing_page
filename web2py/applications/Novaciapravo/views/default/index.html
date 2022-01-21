@@ -5,11 +5,12 @@
 <div class="bg-dark text-secondary px-4 py-2 pb-5 text-left" style="background-image: url('');">
   <div class="container">
     <div class="py-5">
+
         <h1 class="display-5 fw-bold text-white">Юридические услуги в Казани</h1>
         <div class="col-lg-12 ">
           <p class="fs-4 mb-4 text-white lead">Разовые и комлексные юридические услуги с гарантией результата.<br>
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
-            <form class="row g-3">
+            <form class="row g-3" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px; min-height: 60px; max-height: 150px;"  ></textarea>
                 <label for="floatingTextarea">Опишите ситуацию</label>
@@ -25,6 +26,7 @@
               </div>
               <div class="col">
                   <button class="btn btn-primary" type="submit">Оставить заявку</button>
+                  <input  name="_formname" value="test" />
               </div>
           </form>
               <p class="fs-5 mt-4 mb-0">Нет времени заполнять форму?</p>
@@ -33,6 +35,8 @@
     </div>
   </div>
 </div>
+{{=form}}
+{{=BEAUTIFY(request.vars)}}
 
 <div class="container-fluid d-inline-flex d-none d-lg-block pt-5 bg-light" style="height: 200px;">
   <div class="row m-0 px-5 position-relative top-0 start-50 translate-middle d-flex flex-row-reverse" style="height: 250px;">
@@ -130,7 +134,7 @@
         <div class="">
           
         </div>
-        <button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Полный список</button>
+        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список</button></a>
       </div>
     </div>
     </div>
@@ -281,54 +285,7 @@
         <h5 class="lead text-center border-top fs-1">Либо</h1>
     </div>
 
-    <div class="container pb-5">
-          <div class="row p-5 shadow-lg" style="border: 1px solid white; border-radius: 25px;">
-              <div class="col-md-4">
-                <h2>
-                  <span style="color: #ff4917;">Оставьте заявку</span> <span>и мы свяжемся с Вами</span> в ближайшее время
-                </h3>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-6">
-                    <form>
-                        <div class="d-flex">
-                           <div class="row">
-                              <div class="col-sm-auto">
-                                <input type="text" class="form-control" placeholder="Ваше Имя" aria-label="First name">
-                              </div>
-                              <div class="col-sm-auto">
-                                <input type="text" class="form-control" placeholder="+7 (___)__ ____" aria-label="Last name">
-                              </div>
-                            </div>
-                                </div>
-                            
-                            <!-- /.form__request--item -->
-                            <div class="form__request--item">
-                                
-                                <input id="check_bottom4" name="check" type="hidden" value="order">                                
-                                <div class="row">
-                                  <div class="col-md-auto pt-4">
-                                    <button class="btn btn-primary">Оставить заявку</button>
-                                  </div>
-                                  <div class="col-md-6 pt-4">
-                                   <p style="font-size: 13px;">Нажимая на кнопку, я соглашаюсь <a href="/pp.php">на обработку своих персональных данных и прочитал пользовательское соглашение</a></p>
-                                  </div>
-                                </div>
-                                </div>            
-
-                            </div>
-                            <!-- /.form__request--item -->
-                            
-                                <!-- /.form__processing -->
-                            </div>
-                            <!-- /.form__request--item -->
-                        </div>
-                        <!-- /.form__request--flex -->
-                    </form>
-                
-            
-            <!-- /.main__request--bottom -->
-        </div>
+    
         <!-- /.main__request--block -->
     </div>
 </div>
@@ -337,32 +294,7 @@
 </div>
 <!--Section: Contact v.2-->
 
-      <div class="offcanvas offcanvas-top" tabindex="1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title display-5 fs-2" id="offcanvasTopLabel">Юридические услуги</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-
-<!--        <div class="offcanvas-body">
-          <form class="d-flex my-5">
-            <div class="input-group">
-            <button class="btn btn-outline-success" type="submit">Найти</button>
-            <input class="form-control me-2" type="search" placeholder="Поиск по юридическим услугам" aria-label="Search">
-            </div>
-          </form>
-
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">Частным лицам</button>
-            <button type="button" class="btn btn-primary">Юридическим лицам</button>
-            <button type="button" class="btn btn-primary">Оформление документов</button>
-          </div>
-
-        </div>
-        -->
-      </div>
-  </div>
-  <
+      
 {{end}}
 <!--
 <div class="row">

@@ -148,7 +148,12 @@ if configuration.get('scheduler.enabled'):
 # >>> rows = db(db.mytable.myfield == 'value').select(db.mytable.ALL)
 # >>> for row in rows: print row.id, row.myfield
 # -------------------------------------------------------------------------
+db = DAL('sqlite://webform.sqlite')
 
+db.define_table('register',
+    Field('first_name', requires=IS_NOT_EMPTY()),
+    Field('last_name', requires=IS_NOT_EMPTY()),
+    Field('email', requires=IS_NOT_EMPTY()))
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------

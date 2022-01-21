@@ -43,7 +43,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white" >
         <div class="container-fluid p-0">
           <a class="navbar-brand" href="#">
-            <img src="/Novaciapravo/static/images/Logo-svg.svg" width="220" height="100" alt="" class="d-inline-block align-text-top">
+            <img src="/Novaciapravo/static/images/logo-svg.svg" width="220" height="100" alt="" class="d-inline-block align-text-top">
             
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +51,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav gap-3">
-              <a class="nav-link active" aria-current="page" href="#">Главная</a>
-              <a class="nav-link" href="#">Услуги</a>
-              <a class="nav-link" href="#">Прайс-лист</a>
+              <a class="nav-link active" aria-current="page" href="/Novaciapravo/default/index">Главная</a>
+              <a class="nav-link" href="/Novaciapravo/default/services">Услуги</a>
+              <a class="nav-link" href="/Novaciapravo/default/reviews">Отзывы</a>
               <a class="nav-link disabled">Disabled</a>
             </div>
           </div>
@@ -61,7 +61,7 @@
         </div>
       </nav>
     </div>
-    <a class="btn btn-primary d-lg-none" href="tel:713-992-0916" style="width: 100%; border-radius: 0;">
+    <a class="btn btn-primary d-lg-none" href="tel:89179377737" style="width: 100%; border-radius: 0; border: 0; background-color: white;">
       <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone-forward-fill mt-2" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
 </svg></span>
@@ -77,6 +77,54 @@
     </div>
 
     {{block footer}} <!-- this is default footer -->
+    <div class="container pb-5">
+          <div class="row p-5 shadow-lg" style="border: 1px solid white; border-radius: 25px;">
+              <div class="col-md-4">
+                <h2>
+                  <span style="color: #ff4917;">Оставьте заявку</span> <span>и мы свяжемся с Вами</span> в ближайшее время
+                </h3>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-6">
+                    <form>
+                        <div class="d-flex">
+                           <div class="row">
+                              <div class="col-sm-auto">
+                                <input type="text" class="form-control" placeholder="Ваше Имя" aria-label="First name">
+                              </div>
+                              <div class="col-sm-auto">
+                                <input type="text" class="form-control" placeholder="+7 (___)__ ____" aria-label="Last name">
+                              </div>
+                            </div>
+                                </div>
+                            
+                            <!-- /.form__request--item -->
+                            <div class="form__request--item">
+                                
+                                <input id="check_bottom4" name="check" type="hidden" value="order">                                
+                                <div class="row">
+                                  <div class="col-md-auto pt-4">
+                                    <button class="btn btn-primary">Оставить заявку</button>
+                                  </div>
+                                  <div class="col-md-6 pt-4">
+                                   <p style="font-size: 13px;">Нажимая на кнопку, я соглашаюсь <a href="/pp.php">на обработку своих персональных данных и прочитал пользовательское соглашение</a></p>
+                                  </div>
+                                </div>
+                                </div>            
+
+                            </div>
+                            <!-- /.form__request--item -->
+                            
+                                <!-- /.form__processing -->
+                            </div>
+                            <!-- /.form__request--item -->
+                        </div>
+                        <!-- /.form__request--flex -->
+                    </form>
+                
+            
+            <!-- /.main__request--bottom -->
+        </div>
     <div class="bg-dark text-secondary px-4 py-2 text-left">
       <div class="container text-white">
         <div class="row pt-5">
@@ -97,15 +145,16 @@
           </div>
         </div>
       </div>
+
     <div class="container">
     <footer class="row py-5 my-5 border-top">
       <div class="row">
 
       <div class="col-lg-auto">
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Главная</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Услуги</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Отзывы</a></li>
+          <li class="nav-item mb-2"><a href="/Novaciapravo/default/index" class="nav-link p-0 text-muted">Главная</a></li>
+          <li class="nav-item mb-2"><a href="/Novaciapravo/default/services" class="nav-link p-0 text-muted">Услуги</a></li>
+          <li class="nav-item mb-2"><a href="/Novaciapravo/default/reviews" class="nav-link p-0 text-muted">Отзывы</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">О компании</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Контакты</a></li>
         </ul>

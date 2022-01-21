@@ -6,7 +6,20 @@
 
 # ---- example index page ----
 def index():
-    response.flash = T("Hello World")
+    form = SQLFORM(db.register)
+    if form.process(session=None, formname='test').accepted:
+        response.flash = 'form accepted'
+    elif form.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
+    # Note: no form instance is passed to the view
+    return dict(form=form)
+
+def services():
+    return dict(message=T('Welcome to web2py!'))
+
+def reviews():
     return dict(message=T('Welcome to web2py!'))
 
 # ---- API (example) -----
@@ -30,6 +43,7 @@ def wiki():
     return auth.wiki() 
 
 # ---- Action for login/register/etc (required for auth) -----
+
 def user():
     """
     exposes:

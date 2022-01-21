@@ -53,3 +53,64 @@ CREATE TABLE "auth_cas"(
     "renew" CHAR(1)
 );
 success!
+timestamp: 2022-01-21T19:41:02.318680
+CREATE TABLE "mytable"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "myfield" CHAR(512)
+);
+success!
+timestamp: 2022-01-21T19:41:53.860594
+CREATE TABLE "person"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "name" CHAR(512),
+    "image_filename" CHAR(512),
+    "image" CHAR(512)
+);
+success!
+timestamp: 2022-01-21T19:48:22.192054
+CREATE TABLE "image"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "name" CHAR(512),
+    "source_" CHAR(512)
+);
+success!
+timestamp: 2022-01-21T20:16:28.856366
+ALTER TABLE "image" ADD "email" CHAR(512);
+success!
+success!
+timestamp: 2022-01-21T20:25:48.603725
+ALTER TABLE "person" ADD "married" CHAR(1);
+timestamp: 2022-01-21T20:25:48.653410
+ALTER TABLE "person" ADD "gender" CHAR(512);
+timestamp: 2022-01-21T20:25:48.674638
+ALTER TABLE "person" ADD "profile" TEXT;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2022-01-21T20:39:47.022017
+CREATE TABLE "register"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "first_name" CHAR(512),
+    "last_name" CHAR(512),
+    "email" CHAR(512)
+);
+success!
