@@ -151,9 +151,14 @@ if configuration.get('scheduler.enabled'):
 db = DAL('sqlite://webform.sqlite')
 
 db.define_table('register',
-    Field('first_name', requires=IS_NOT_EMPTY()),
-    Field('last_name', requires=IS_NOT_EMPTY()),
-    Field('email', requires=IS_NOT_EMPTY()))
+    Field('form_text', 'text'),
+    Field('name', 'string', requires=IS_NOT_EMPTY()),
+    Field('tel', requires=IS_NOT_EMPTY()))
+
+db.define_table('email_problem', 
+    Field('l_name', 'string', requires=IS_NOT_EMPTY()),
+    Field('email', 'string', requires=IS_NOT_EMPTY()),
+    Field('problem', 'text', requires=IS_NOT_EMPTY()))
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------

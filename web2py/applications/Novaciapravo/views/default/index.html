@@ -12,21 +12,23 @@
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
             <form class="row g-3" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px; min-height: 60px; max-height: 150px;"  ></textarea>
+                <textarea class="form-control" name="form_text" placeholder="Leave a comment here" id="floatingTextarea" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
                 <label for="floatingTextarea">Опишите ситуацию</label>
               </div>
               
                 <div class="form-floating col-sm-3 ">
-                   <input type="text" class="form-control" placeholder="Leave a comment here" id="validationDefault01" required>
+                   <input type="text" name="name" class="form-control" placeholder="Leave a comment here" id="validationDefault01" required>
                    <label for="validationDefault01">Ваше имя</label>
                 </div>
               <div class="form-floating col-sm-3">
-                   <input type="tel" class="form-control" placeholder="Leave a comment here" id="validationDefault02" required>
+                   <input type="tel" name="tel" class="form-control" placeholder="Leave a comment here" id="validationDefault02" required>
                    <label class="form-label" for="validationDefault02">Ваш номер<label>
               </div>
               <div class="col">
-                  <button class="btn btn-primary" type="submit">Оставить заявку</button>
-                  <input  name="_formname" value="test" />
+                  <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#successModal">Оставить заявку</button>
+                  <input type="hidden" name="test" value="test" />
+                  {{=BEAUTIFY(request.vars)}}
+                  
               </div>
           </form>
               <p class="fs-5 mt-4 mb-0">Нет времени заполнять форму?</p>
@@ -35,8 +37,7 @@
     </div>
   </div>
 </div>
-{{=form}}
-{{=BEAUTIFY(request.vars)}}
+
 
 <div class="container-fluid d-inline-flex d-none d-lg-block pt-5 bg-light" style="height: 200px;">
   <div class="row m-0 px-5 position-relative top-0 start-50 translate-middle d-flex flex-row-reverse" style="height: 250px;">
@@ -224,7 +225,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form action="#" enctype="multipart/form-data" method="post">
 
                 <!--Grid row-->
                 <div class="row">
@@ -232,7 +233,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
+                            <input type="text" id="name" name="l_name" class="form-control">
                             <label for="name" class="">Ваше Имя</label>
                         </div>
                     </div>
@@ -241,8 +242,8 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Ваша Почта</label>
+                            <input type="text" id="_email" name="email" class="form-control">
+                            <label for="_email" class="">Ваша Почта</label>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -254,17 +255,20 @@
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="problem" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Опишите ситуацию</label>
                         </div>
                     </div>
                 </div>
                 <!--Grid row-->
 
-            </form>
+            
             <div class=" pt-5">
-                <button class="btn btn-primary">Отправить</button>
+                <button class="btn btn-primary" type="submit">Отправить</button>
+                <input type="hidden" name="test_2" value="test" />
             </div>
+            {{=BEAUTIFY(request.vars)}}
+            </form>
            
         </div>
         <!--Grid column-->
@@ -337,5 +341,28 @@
 </div>
 
 -->
+
+<!-- Modal-Phone -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg>
+        <h5 class="modal-title px-3" id="successModalLabel">Заявка успешно отправлена</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Спасибо за доверие!</p>
+        <p>Мы свяжемся с Вами в ближайшее время.<br>Ожидайте звонка с номера 8(917)937-77-37</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary float-start" data-bs-dismiss="modal">Закрыть</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 

@@ -6,15 +6,13 @@
 
 # ---- example index page ----
 def index():
-    form = SQLFORM(db.register)
-    if form.process(session=None, formname='test').accepted:
-        response.flash = 'form accepted'
-    elif form.errors:
-        response.flash = 'form has errors'
-    else:
-        response.flash = 'please fill the form'
-    # Note: no form instance is passed to the view
-    return dict(form=form)
+    form1 = SQLFORM(db.register)
+    form2 = SQLFORM(db.email_problem)
+    if form1.process(formname='test').accepted:
+        response.flash = 'form one accepted'
+    if form2.process(formname='test_2').accepted:
+        response.flash = 'form two accepted'
+    return dict(form1=form1, form2=form2)
 
 def services():
     return dict(message=T('Welcome to web2py!'))

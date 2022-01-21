@@ -114,3 +114,101 @@ CREATE TABLE "register"(
     "email" CHAR(512)
 );
 success!
+success!
+timestamp: 2022-01-21T22:26:54.908656
+ALTER TABLE "register" ADD "tel" CHAR(512);
+success!
+success!
+success!
+success!
+timestamp: 2022-01-21T22:28:42.225611
+ALTER TABLE "register" ADD "form_text" TEXT;
+timestamp: 2022-01-21T22:28:42.235895
+ALTER TABLE "register" ADD "name" CHAR(512);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+timestamp: 2022-01-21T22:33:10.861188
+CREATE TABLE "email_problem"(
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "l_name" CHAR(512),
+    "email" CHAR(512),
+    "problem" TEXT
+);
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
