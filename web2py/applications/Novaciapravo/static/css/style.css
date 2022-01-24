@@ -5,6 +5,9 @@
     width: 184px;
     height: 58px;
 }
+
+
+
 .bg-light {
 	background-color: #F2F2F2 !important;
 }
@@ -45,6 +48,38 @@
 }
 
 #person-photo {
+	position: relative;
+    height: 360px;
+}
+
+.service-image {
+	width: 100%;
+    max-width: 296px;
+    margin-left: auto;
+    position: relative;
+    
+}
+
+#service-photo-inner::before {
+	content: '';
+    display: block;
+    width: 234px;
+    height: 330px;
+    background: #ff4917;
+    border: 1px solid #ff4917;
+    
+    position: absolute;
+    top: -70px;
+    right: -80px;
+    
+}
+
+#service-photo-inner {
+	position: relative;
+    z-index: 1;
+}
+
+#service-photo {
 	position: relative;
     height: 360px;
 }

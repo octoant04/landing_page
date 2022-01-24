@@ -5,32 +5,35 @@
 <div class="bg-dark text-secondary px-4 py-2 pb-5 text-left" style="background-image: url('');">
   <div class="container">
     <div class="py-5">
-
+        <div id="target"></div>
         <h1 class="display-5 fw-bold text-white">Юридические услуги в Казани</h1>
         <div class="col-lg-12 ">
           <p class="fs-4 mb-4 text-white lead">Разовые и комлексные юридические услуги с гарантией результата.<br>
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
-            <form class="row g-3" action="#" enctype="multipart/form-data" method="post">
+            <form class="row g-3" id="myform">
               <div class="form-floating col-sm-10">
-                <textarea class="form-control" name="form_text" placeholder="Leave a comment here" id="floatingTextarea" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
-                <label for="floatingTextarea">Опишите ситуацию</label>
+                <textarea class="form-control" name="form_text" placeholder="Leave a comment here" id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
+                <label for="form_text">Опишите ситуацию</label>
               </div>
               
-                <div class="form-floating col-sm-3 ">
-                   <input type="text" name="name" class="form-control" placeholder="Leave a comment here" id="validationDefault01" required>
-                   <label for="validationDefault01">Ваше имя</label>
+               <div class="form-floating col-sm-3 ">
+                   <input type="text" name="name" class="form-control" placeholder="Leave a comment here" id="name" required>
+                   <label for="name">Ваше имя</label>
                 </div>
               <div class="form-floating col-sm-3">
-                   <input type="tel" name="tel" class="form-control" placeholder="Leave a comment here" id="validationDefault02" required>
-                   <label class="form-label" for="validationDefault02">Ваш номер<label>
+                   <input type="tel" name="tel" class="form-control" placeholder="Leave a comment here" id="tel" required>
+                   <label class="form-label" for="tel">Ваш номер<label>
               </div>
               <div class="col">
-                  <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#successModal">Оставить заявку</button>
-                  <input type="hidden" name="test" value="test" />
+                  <button class="btn btn-primary" type="submit" id="">Оставить заявку</button>
+                  <input type="submit" name="">
+                  
                   {{=BEAUTIFY(request.vars)}}
+
                   
               </div>
           </form>
+          <!--{{=LOAD('default', 'new_client.load', ajax=True)}}-->
               <p class="fs-5 mt-4 mb-0">Нет времени заполнять форму?</p>
               <p class="fs-5" >Свяжитесь с нами напрямую по номеру +7 (917) 937-77-37</p>
         </div>
@@ -190,7 +193,11 @@
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
       <div class="accordion-body">
-        <strong>Мы превратим ваши расходы на юридические услуги в сэкономленные средства и время.</strong> Это обеспечивается четкими стандартами работы и неоспоримыми преимуществами:
+        <strong>Мы превратим ваши расходы на юридические услуги в сэкономленные средства и время.</strong>
+        <p>Услуги юриста сэкономят невосполнимый ресурс – время <br>Грамотный человек может изучить юридическую литературу и составить претензию с исковым заявлением. Но он вряд ли сделает это быстро. Он может не учесть профессиональные нюансы. Помощь профессионала ускорит процесс.</p>
+          <p>Есть сложные случаи, когда требуются: юридический анализ договоров, проведение экспертиз, обжалования действий судебных органов <br> Эти процедуры может осуществить только юрист с опытом в соответствующей области права.</p>
+          <p>Гражданин вправе требовать не только возмещение прямых убытков от приобретения некачественного или небезопасного товара, но и взыскивать моральный ущерб. <br> Обосновать моральный вред тоже убедительнее получается у профессионалов.</p>
+          <p>Защита в суде может оказаться бесплатной для потребителя, ведь стоимость юридической помощи реально взыскать с виновной стороны</p>
       </div>
     </div>
   </div>
@@ -265,7 +272,7 @@
             
             <div class=" pt-5">
                 <button class="btn btn-primary" type="submit">Отправить</button>
-                <input type="hidden" name="test_2" value="test" />
+                
             </div>
             {{=BEAUTIFY(request.vars)}}
             </form>
@@ -343,14 +350,14 @@
 -->
 
 <!-- Modal-Phone -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content p-3">
       <div class="modal-header">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
 </svg>
-        <h5 class="modal-title px-3" id="successModalLabel">Заявка успешно отправлена</h5>
+        <h5 class="modal-title px-3" id="myModalLabel">Заявка успешно отправлена</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -365,4 +372,12 @@
   </div>
 </div>
 
-
+<script>
+<script>
+jQuery('#myform').submit(function() {
+  ajax('{{=URL('new_client')}}', 
+    '#myform', 'target');
+  return false;
+});
+</script>
+</script>

@@ -6,19 +6,45 @@
 
 # ---- example index page ----
 def index():
-    form1 = SQLFORM(db.register)
-    form2 = SQLFORM(db.email_problem)
-    if form1.process(formname='test').accepted:
-        response.flash = 'form one accepted'
-    if form2.process(formname='test_2').accepted:
-        response.flash = 'form two accepted'
-    return dict(form1=form1, form2=form2)
+    return dict()
 
 def services():
     return dict(message=T('Welcome to web2py!'))
 
 def reviews():
     return dict(message=T('Welcome to web2py!'))
+
+def contacts():
+    return dict()
+
+def vipiska_egrul():
+    return dict()
+
+def vipiska_egrn():
+    return dict()
+
+def grazdanskie_dogovory():
+    return dict()
+
+def zashhita_prav_potrebitelej():
+    return dict()
+
+def podgotovka_juridicheskih_documentov():
+    return dict()
+
+def pismennaya_konsultacia():
+    return dict()
+
+def yuridicheskaya_ekspertiza():
+    return dict()
+
+def oznakomlenie_s_materialamy():
+    return dict()
+
+def database():
+    grid1 = SQLFORM.grid(db.register, deletable=True, editable=False)
+    grid2 = SQLFORM.grid(db.consultation)
+    return dict(grid1=grid1, grid2=grid2)
 
 # ---- API (example) -----
 @auth.requires_login()
@@ -41,6 +67,26 @@ def wiki():
     return auth.wiki() 
 
 # ---- Action for login/register/etc (required for auth) -----
+def new_client():
+    form = SQLFORM(db.register)
+    form.process()
+    if request.ajax:
+        if form.accepted:
+            return DIV("Message posted")
+        elif form.errors:
+            return TABLE(*[TR(k, v) for k, v in form.errors.items()])
+    return dict(form=form)
+ 
+def new_consultation():
+    form = SQLFORM(db.consultation)
+    form.process()
+    if request.ajax:
+        if form.accepted:
+            return DIV("Message posted")
+        elif form.errors:
+            return TABLE(*[TR(k, v) for k, v in form.errors.items()])
+    return dict(form=form)
+ 
 
 def user():
     """
