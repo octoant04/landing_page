@@ -17,10 +17,12 @@
 	        	</div>
 	        </div>
         </div>
+</div>
 
-        <div class="container">
-        	
-        </div>
+<div class="container my-5"> 
+	<div class="d-flex flex-wrap gap-5" id="reviews">
+    {{=LOAD('default', 'reviews_list.load', ajax=True, target="reviews", content='')}}
+    </div>
 </div>
 
 <!-- Modal -->
@@ -31,48 +33,66 @@
         <h5 class="modal-title" id="exampleModalLabel">Новый отзыв</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <form action="#" enctype="multipart/form-data" method="post">
 <!--Modal Content -->
       <div class="modal-body d-grid gap-3">
       	<div>
+
 	      	<label for="validationCustom04" class="form-label fw-bold">Выберите оказанную услугу</label>
-	      	<select class="form-select" id="validationCustom04" required>
-		      <option selected disabled value="">Представительство в суде</option>
-		      <option>Другое</option>
+	      	<select class="form-select" id="validationCustom04" name="review_service_name" required>
+		      <option value="Представительство в суде" selected="selected">Представительство в суде</option>
+		      <option value="Другое">Другое</option>
 		    </select>
+		    
+		    
 		</div>
 		<div>
 		    <label for="message" class="form-label fw-bold">Заголовок отзыва</label>
-	        <input type="text" id="reviewHeading" name="reviewHeading" class="form-control md-textarea">
+	        <input type="text" name="review_heading" placeholder="" class="form-control md-textarea" required>
         </div>
         <div>
         	<label for="message" class="form-label fw-bold">Текст отзыва</label>
-        	<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+        	<textarea type="text" name="review_body" placeholder="" rows="2" class="form-control md-textarea" required></textarea>
         </div>
         <div class="row">
         	<div class="col-md-4">
-        		<label for="message" class="form-label fw-bold">Имя</label>
-	        	<input type="text" id="reviewHeading" name="reviewHeading" class="form-control md-textarea">
+        		<label for="message" class="form-label fw-bold">Имя</label required>
+	        	<input type="text"  name="reviewer_name" class="form-control md-textarea">
         	</div>
         	<div class="col-md-4">
-        		<label for="message" class="form-label fw-bold">Город</label>
-	        	<input type="text" id="reviewHeading" name="reviewHeading" class="form-control md-textarea">
+        		<label for="message" class="form-label fw-bold">Email (для ответа)</label>
+	        	<input type="email" name="reivewer_email" placeholder="my@example.ru" class="form-control md-textarea" required>
         	</div>
         </div>
         <div class="d-flex">
-        	 <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input" style="padding-top: 3px;"> 
+        	 <input class="form-check-input" type="checkbox" value="accepted" name="privacy-check" aria-label="Checkbox for following text input" style="padding-top: 3px;" required> 
         	 <p class="px-2 small">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных и соглашаюсь с политикой конфидециальности.</p>
+        	 <input type="hidden" id="created_on" name="created_on" value="">
         </div>
     </div>
 	 
 <!-- END -->
       <div class="modal-footer">
-      	<button type="button" class="btn btn-primary">Отправить</button>
+      	<button type="submit" class="btn btn-primary">Отправить</button>
+      	<input type="hidden" name="_formname" value="review" />
+      	</form>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style=" width: 184px; height: 58px;">Закрыть окно</button>
+        
       </div>
+      
     </div>
   </div>
 </div>
 
 {{end}}
 
+<script type="text/javascript">
+	n =  new Date();
+	MyDateString = ('0' + n.getDate()).slice(-2) + '.'
+             + ('0' + (n.getMonth()+1)).slice(-2) + '.'
+             + n.getFullYear();
+
+	date = MyDateString + "," + ' ' + n.getHours() + ":" + n.getMinutes();
+	document.getElementById("created_on").value = date;
+</script>
 

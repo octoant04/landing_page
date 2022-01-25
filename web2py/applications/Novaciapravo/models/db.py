@@ -156,6 +156,16 @@ db.define_table('register',
     Field('tel', requires=IS_NOT_EMPTY()),
     format = '%(name)s')
 
+db.define_table('review',
+    Field('review_service_name'),
+    Field('review_heading'),
+    Field('review_body'),
+    Field('reviewer_name'),
+    Field('reivewer_email'),
+    Field('created_on'),
+    Field('privacy_check'))
+
+db.review.reviewer_name.requires=IS_NOT_EMPTY()
 #db.register.name.requires=IS_NOT_EMPTY()
 
 db.define_table('email_problem', 

@@ -12,7 +12,22 @@ def services():
     return dict(message=T('Welcome to web2py!'))
 
 def reviews():
-    return dict(message=T('Welcome to web2py!'))
+
+    form = SQLFORM(db.review)
+    if form.process(session=None, formname='review').accepted:
+        response.flash = 'form accepted'
+#        redirect(URL('review_success'))
+    elif form.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
+    # Note: no form instance is passed to the view
+    return dict()
+    
+def reviews_list():
+    query = db.review.id > 0
+    reviews = db(query).select()
+    return dict(reviews=reviews)
 
 def contacts():
     return dict()
@@ -42,18 +57,19 @@ def oznakomlenie_s_materialamy():
     return dict()
 
 def database():
-    grid1 = SQLFORM.grid(db.register, deletable=True, editable=False)
+    grid1 = SQLFORM.grid(db.register, editable=True, deletable=True, details=True   )
     grid2 = SQLFORM.grid(db.consultation)
-    return dict(grid1=grid1, grid2=grid2)
+    grid3 = SQLFORM.grid(db.review, deletable=True, details=True)
+    return dict(grid1=grid1, grid2=grid2, grid3=grid3)
 
 # ---- API (example) -----
-@auth.requires_login()
+
 def api_get_user_email():
     if not request.env.request_method == 'GET': raise HTTP(403)
     return response.json({'status':'success', 'email':auth.user.email})
 
 # ---- Smart Grid (example) -----
-@auth.requires_membership('admin') # can only be accessed by members of admin groupd
+# can only be accessed by members of admin groupd
 def grid():
     response.view = 'generic.html' # use a generic view
     tablename = request.args(0)
