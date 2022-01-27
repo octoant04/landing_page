@@ -174,8 +174,8 @@ db.define_table('email_problem',
     Field('problem', 'text', requires=IS_NOT_EMPTY()))
 
 db.define_table('consultation',
-    Field('name', requires=IS_NOT_EMPTY()),
-    Field('tel', requires=IS_NOT_EMPTY()))
+    Field('name', label="Ваше Имя", requires=IS_NOT_EMPTY()),
+    Field('tel', label="Ваш Номер",requires=IS_NOT_EMPTY()))
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------

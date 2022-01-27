@@ -323,4 +323,6 @@
 'Your temporary login code is {0}': 'Your temporary login code is {0}',
 'Your username is: %(username)s': 'Your username is: %(username)s',
 'Your username was emailed to you': 'Your username was emailed to you',
+'Ваш Номер': 'Ваш Номер',
+'Ваше Имя': 'Ваше Имя',
 }

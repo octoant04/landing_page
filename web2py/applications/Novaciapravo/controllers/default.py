@@ -9,7 +9,7 @@ def index():
     form1 = SQLFORM(db.register)
     if form1.process(session=None, formname='main').accepted:
         response.flash = 'form accepted'
-        redirect(URL('next'))
+        redirect(URL('success'))
     elif form1.errors:
         response.flash = 'form has errors'
     else:
@@ -18,7 +18,7 @@ def index():
     form2 = SQLFORM(db.email_problem)
     if form2.process(session=None, formname='email').accepted:
         response.flash = 'form accepted'
-        redirect(URL('next'))
+        redirect(URL('email_success'))
     elif form2.errors:
         response.flash = 'form has errors'
     else:
@@ -33,7 +33,7 @@ def reviews():
     form = SQLFORM(db.review)
     if form.process(session=None, formname='review').accepted:
         response.flash = 'form accepted'
-#        redirect(URL('review_success'))
+        redirect(URL('review_success'))
     elif form.errors:
         response.flash = 'form has errors'
     else:
@@ -101,14 +101,15 @@ def wiki():
     return auth.wiki() 
 
 # ---- Action for login/register/etc (required for auth) -----
-def new_client():
-    form = SQLFORM(db.register)
+def new_consultation_ajax():
+    form = SQLFORM(db.consultation, formstyle='divs')
     form.process()
     if request.ajax:
         if form.accepted:
-            return DIV("Message posted")
+            return DIV("Спасибо за доверие, мы перезвоним Вам в ближайшее время!")
         elif form.errors:
-            return TABLE(*[TR(k, v) for k, v in form.errors.items()])
+            response.flash("Что-то пошло не так")
+    return dict(form=form)
     
  
 def new_consultation():

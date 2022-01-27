@@ -54,7 +54,9 @@
           <p class="small">Курс посвящен конкретной проработке образа мышления, знаний и навыков агента, необходимых агенту на сегодняшнем рынке для создания предсказуемого повторяемого и прибыльного бизнеса</p>
     </div>
     <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <img src="/Novaciapravo/static/images/rubles-icon.svg" alt="" style="padding: 10px;">
+          <div style="padding: 17px;">
+            <img src="/Novaciapravo/static/images/wallet2.svg" alt="" style="width: 36px; height: 36px;">
+          </div>
           <h5 style="color: white;">Гибкая ценовая политика</h5>
           <p class="small">Курс посвящен конкретной проработке образа мышления, знаний и навыков агента, необходимых агенту на сегодняшнем рынке для создания предсказуемого повторяемого и прибыльного бизнеса</p>
     </div>
@@ -72,7 +74,7 @@
               <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
             </div>
             <div class="py-4">
-            <button type="button" class="btn btn-outline-primary" style="width: 100%;">Получить консультацию</button>
+            <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
             </div>
           </div>
       </div>
@@ -83,7 +85,7 @@
     <div class="col-sm-7 px-5 my-5">
        <div class="col-12">
         <div class="fs-4 lead">
-        <p1>Наша компания предоставляет профессиональные услуги юриста:</p>
+        <p>Наша компания предоставляет профессиональные услуги юриста:</p>
         <ul class="mx-5">
           <li>юридическим лицам всех форм собственности</li>
           <li>индивидуальным предпринимателям</li>
@@ -111,17 +113,17 @@
           </div>
           
           <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
-            <a href="" style="text-decoration: none; color: black;">Составление <br> юридических документов</a>  
+            <a href="/Novaciapravo/default/podgotovka_juridicheskih_documentov" style="text-decoration: none; color: black;">Составление <br> юридических документов</a>  
           </div>
         </div>
         <div>
-        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3 float-end" type="button">Полный список</button></a>
+        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список</button></a>
       </div>
     </div>
     </div>
   </div>
-
     </div>  
+  </div>
 
           <!--Кнопка должна переводить на страницу с услугами-->
         <!--<button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Полный список</button>-->
@@ -185,18 +187,24 @@
 
   </div>
     <div class="d-grid gap-2 col-12 mx-auto">
+      <a href="/Novaciapravo/static/uploads/File.pdf?attachment">
      <button class="btn btn-primary" id="btn-services" type="button" style="height: 120px;">
       <div class="d-flex justify-content-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16" style="margin-top: 10px; margin-right: 10px;">
           <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
         </svg>
+        
         <div class="d-flex-column">
+          
           <p class="float-start my-0">Скачать брошюру</p><br>
           <h3>Юридическая практика ЮК «Новация»</h3> 
+          
         </div>
+        
       </div>
       
      </button>
+     </a>
     </div>
     <!--Section: Contact v.2-->
     <div class="container">
@@ -254,7 +262,7 @@
                 <input type="hidden" name="_formname" value="email">
                 
             </div>
-            {{=BEAUTIFY(request.vars)}}
+            
             </form>
            
         </div>
@@ -285,7 +293,25 @@
 </div>
 <!--Section: Contact v.2-->
 
-      
+<div class="modal fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultModalLabel">Оставить заявку</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        {{=LOAD('default', 'new_consultation_ajax.load', ajax=True)}}
+      </div>
+      <div class="modal-footer">
+        <p class="text-muted small">Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку персональных данных</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {{end}}
 
 

@@ -6,6 +6,11 @@
     height: 58px;
 }
 
+#submit_record__row {
+	margin-top: 10px;
+    border-top: 1px solid #ff4917;
+    
+}
 
 .bg-light {
 	background-color: #F2F2F2 !important;
