@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+<div class="container">
+	<p>Enter a search term, e.g., cat</p>
+	<form id="lunrSearchForm" name="lunrSearchForm">
+		<input class="search-input" name="q" placeholder="Enter search term" type="text"> <input type="submit" value="Search">
+	</form>
+	
+	<p>Search results will be written below:</p>
+	<div class="resultCount" id="resultCount"></div>
+	<div id="searchResults"></div>
+</div>
+{{end}}

@@ -6,6 +6,23 @@
 
 # ---- example index page ----
 def index():
+    form1 = SQLFORM(db.register)
+    if form1.process(session=None, formname='main').accepted:
+        response.flash = 'form accepted'
+        redirect(URL('next'))
+    elif form1.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
+    # Note: no form instance is passed to the view
+    form2 = SQLFORM(db.email_problem)
+    if form2.process(session=None, formname='email').accepted:
+        response.flash = 'form accepted'
+        redirect(URL('next'))
+    elif form2.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
     return dict()
 
 def services():
@@ -60,7 +77,8 @@ def database():
     grid1 = SQLFORM.grid(db.register, editable=True, deletable=True, details=True   )
     grid2 = SQLFORM.grid(db.consultation)
     grid3 = SQLFORM.grid(db.review, deletable=True, details=True)
-    return dict(grid1=grid1, grid2=grid2, grid3=grid3)
+    grid4 = SQLFORM.grid(db.email_problem, deletable=True)
+    return dict(grid1=grid1, grid2=grid2, grid3=grid3, grid4=grid4)
 
 # ---- API (example) -----
 
@@ -91,17 +109,15 @@ def new_client():
             return DIV("Message posted")
         elif form.errors:
             return TABLE(*[TR(k, v) for k, v in form.errors.items()])
-    return dict(form=form)
+    
  
 def new_consultation():
     form = SQLFORM(db.consultation)
-    form.process()
-    if request.ajax:
-        if form.accepted:
-            return DIV("Message posted")
-        elif form.errors:
-            return TABLE(*[TR(k, v) for k, v in form.errors.items()])
-    return dict(form=form)
+    if form.accepts(request, formname=None):
+        return DIV("Message posted")
+    elif form.errors:
+        return TABLE(*[TR(k, v) for k, v in form.errors.items()])
+    
  
 
 def user():

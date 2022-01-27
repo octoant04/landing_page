@@ -10,27 +10,26 @@
         <div class="col-lg-12 ">
           <p class="fs-4 mb-4 text-white lead">Разовые и комлексные юридические услуги с гарантией результата.<br>
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
-            <form class="row g-3" id="myform">
+            <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
-                <textarea class="form-control" name="form_text" placeholder="Leave a comment here" id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
+                <textarea class="form-control" name="form_text" placeholder=" " id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
                 <label for="form_text">Опишите ситуацию</label>
+                <p class="text-muted my-0">Прим. Заказчик не выплачивает обещанный гонорар, как взыскать деньги?</p>
               </div>
               
                <div class="form-floating col-sm-3 ">
-                   <input type="text" name="name" class="form-control" placeholder="Leave a comment here" id="name" required>
+                   <input type="text" name="name" class="form-control" placeholder=" " id="name" required>
                    <label for="name">Ваше имя</label>
                 </div>
               <div class="form-floating col-sm-3">
-                   <input type="tel" name="tel" class="form-control" placeholder="Leave a comment here" id="tel" required>
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> 
+                   <input type="tel" name="tel" class="form-control" placeholder=" " id="tel" required>
                    <label class="form-label" for="tel">Ваш номер<label>
               </div>
               <div class="col">
                   <button class="btn btn-primary" type="submit" id="">Оставить заявку</button>
-                  <input type="submit" name="">
-                  
-                  {{=BEAUTIFY(request.vars)}}
-
-                  
+                  <input type="hidden" name="_formname", value="main">
+                
               </div>
           </form>
           <!--{{=LOAD('default', 'new_client.load', ajax=True)}}-->
@@ -72,44 +71,15 @@
             <div id="person-photo">
               <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
             </div>
+            <div class="py-4">
+            <button type="button" class="btn btn-outline-primary" style="width: 100%;">Получить консультацию</button>
+            </div>
           </div>
       </div>
       </div>
     </div>
+
     
-    <!--
-    <div class="col-sm-5 p-0">
-      <div class="card mb-3 border border-dark" style="max-width: 540px;">
-        <div class="card-header fw-bold">
-           Наиболее востребованные услуги
-        </div>
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/Novaciapravo/static/images/sample.png" class="img-thumbnail rounded-start" alt="..." style="height: ">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Представительство в арбитражном суде</h5>
-              <p class="card-text">Наши юристы обеспечат подготовку доказательств и их юридическую силу, грамотно изложат аргументацию, четко сформируют вашу позицию в суде.<br> Защитим ваши интересы и добьемся нужного результата.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card border border-dark" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/Novaciapravo/static/images/sample.png" class="img-thumbnail rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Подготовка юридических документов в Казани</h5>
-              <p class="card-text">Наши юристы с обширным опытом судебной практики проанализируют ваш вопрос, подготовят для вас полный пакет документов, а также подскажут вам решение и план действий в любой ситуации.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
     <div class="col-sm-7 px-5 my-5">
        <div class="col-12">
         <div class="fs-4 lead">
@@ -135,15 +105,24 @@
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg></a>
         </div>
-        <div class="">
+        <div class="d-flex gap-5 fs-5">
+          <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
+            <a href="" style="text-decoration: none; color: black;">Представительство <br> в арбитражном суде</a>  
+          </div>
           
+          <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
+            <a href="" style="text-decoration: none; color: black;">Составление <br> юридических документов</a>  
+          </div>
         </div>
-        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список</button></a>
+        <div>
+        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3 float-end" type="button">Полный список</button></a>
       </div>
     </div>
     </div>
   </div>
+
     </div>  
+
           <!--Кнопка должна переводить на страницу с услугами-->
         <!--<button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Полный список</button>-->
         
@@ -249,7 +228,7 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="_email" name="email" class="form-control">
+                            <input type="email" id="_email" name="email" placeholder="my@example.ru" class="form-control">
                             <label for="_email" class="">Ваша Почта</label>
                         </div>
                     </div>
@@ -272,6 +251,7 @@
             
             <div class=" pt-5">
                 <button class="btn btn-primary" type="submit">Отправить</button>
+                <input type="hidden" name="_formname" value="email">
                 
             </div>
             {{=BEAUTIFY(request.vars)}}
@@ -307,77 +287,25 @@
 
       
 {{end}}
-<!--
-<div class="row">
-  <div class="col-md-12">
-    {{if 'message' in globals():}}
-    <h2>{{=message}}</h2>
-    <p class="lead">{{=T('How did you get here?')}}</p>
-    <ol style="word-wrap:break-word;">
-      <li>{{=T('You are successfully running web2py')}}</li>
-      <li>{{=XML(T('You visited the url %s', A(request.env.path_info,_href=request.env.path_info)))}}</li>
-      <li>{{=XML(T('Which called the function %s located in the file %s',
-        (A(request.function+'()',_href='#'),
-        A('web2py/applications/%(application)s/controllers/%(controller)s.py' % request,
-        _href=URL('admin','default','peek', args=(request.application,'controllers',request.controller+'.py'))))))}}</li>
-      <li>{{=XML(T('The output of the file is a dictionary that was rendered by the view %s',
-        A('web2py/applications/%(application)s/views/%(controller)s/index.html' % request,
-        _href=URL('admin','default','peek',args=(request.application,'views',request.controller,'index.html')))))}}</li>
-      <li>{{=T('You can modify this application and adapt it to your needs')}}</li>
-    </ol>
-    <div class="jumbotron jumbotron-fluid" style="padding:30px;word-wrap:break-word;">
-      <div class="container center">
-        <a class="btn btn-primary" href="{{=URL('admin','default','index')}}">
-          <i class="fa fa-cog"></i>
-          {{=T("admin")}}
-        </a>
-        <a class="btn btn-secondary" href="{{=URL('examples','default','index')}}">{{=T("Online examples")}}</a>
-        <a class="btn btn-secondary" href="http://web2py.com">web2py.com</a>
-        <a class="btn btn-secondary" href="http://web2py.com/book">{{=T('Documentation')}}</a>
-        <a class="btn btn-secondary" href="{{=URL('default','api_get_user_email')}}">{{=T('API Example')}}</a>
-        <a class="btn btn-secondary" href="{{=URL('default','grid/auth_user')}}">{{=T('Grid Example')}}</a>
-        <a class="btn btn-secondary" href="{{=URL('default','wiki')}}">{{=T('Wiki Example')}}</a>
-      </div>
-    </div>
-    {{elif 'content' in globals():}}
-    {{=content}}
-    {{else:}}
-    {{=BEAUTIFY(response._vars)}}
-    {{pass}}
-  </div>
-</div>
 
--->
 
-<!-- Modal-Phone -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content p-3">
-      <div class="modal-header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-</svg>
-        <h5 class="modal-title px-3" id="myModalLabel">Заявка успешно отправлена</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Спасибо за доверие!</p>
-        <p>Мы свяжемся с Вами в ближайшее время.<br>Ожидайте звонка с номера 8(917)937-77-37</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary float-start" data-bs-dismiss="modal">Закрыть</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+
+
 
 <script>
+jQuery('#tel').mask('+7(999) 999-99-99');
+</script>
+
+
+<!-- 
 <script>
 jQuery('#myform').submit(function() {
-  ajax('{{=URL('new_client')}}', 
-    '#myform', 'target');
+  var form = document.getElementById("myform");
+  form.reset();
+
+  jQuery("#myModal").modal('show');
   return false;
-});
+});  
+  
 </script>
-</script>
+-->
