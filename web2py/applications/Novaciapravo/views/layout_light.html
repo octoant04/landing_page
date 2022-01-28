@@ -82,56 +82,9 @@
 
     {{block footer}} <!-- this is default footer -->
     
-    <div class="container pb-5">
-          <div class="row p-5 shadow-lg" style="border: 1px solid white; border-radius: 25px;">
-              <div class="col-md-4">
-                <h2>
-                  <span style="color: #ff4917;">Оставьте заявку</span> <span>и мы свяжемся с Вами</span> в ближайшее время
-                </h3>
-              </div>
-              <div class="col-md-2"></div>
-              <div class="col-md-6">
-                    <form id="consult_form">
-                        <div class="d-flex">
-                           <div class="row">
-                              <div class="col-sm-auto">
-                                <input type="text" class="form-control" placeholder="Ваше Имя" aria-label="First name" name="name">
-                              </div>
-                              <div class="col-sm-auto">
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> 
-                                <input type="text" class="form-control" placeholder="+7 (___)__ ____" aria-label="Last name" name="tel" id="tel2"> 
-                              </div>
-                            </div>
-                                </div>
-                            
-                            <!-- /.form__request--item -->
-                            <div class="form__request--item">
-                                
-                                                                
-                                <div class="row">
-                                  <div class="col-md-auto pt-4">
-                                    <button class="btn btn-primary" type="submit">Оставить заявку</button>
-                                    
-                                  </div>
-                                  <div class="col-md-6 pt-4">
-                                   <p style="font-size: 13px;">Нажимая на кнопку, я соглашаюсь <a href="/pp.php">на обработку своих персональных данных и прочитал пользовательское соглашение</a></p>
-                                  </div>
-                                </div>
-                                </div>            
-
-                            </div>
-                            <!-- /.form__request--item -->
-                            
-                                <!-- /.form__processing -->
-                            </div>
-                            <!-- /.form__request--item -->
-                        </div>
-                        <!-- /.form__request--flex -->
-                    </form>
-                
+    
             
-            <!-- /.main__request--bottom -->
-        </div>
+        
     <div class="bg-dark text-secondary px-4 py-2 text-left">
       <div class="container text-white">
         <div class="row pt-5">
@@ -208,52 +161,9 @@
 </div>
 -->
 
-<!-- Modal-Phone -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content p-3">
-      <div class="modal-header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-</svg>
-        <h5 class="modal-title px-3" id="myModalLabel">Заявка успешно отправлена</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Спасибо за доверие!</p>
-        <p>Мы свяжемся с Вами в ближайшее время.<br>Ожидайте звонка с номера 8(917)937-77-37</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary float-start" data-bs-dismiss="modal">Закрыть</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
 
-<script>
-jQuery('#consult_form').submit(function() {
-  ajax('{{=URL('new_consultation')}}',
-       ['name','tel'], 'target2');
-  return false;
-});
-</script>
 
-<script>
-jQuery('#consult_form').submit(function() {
-  var form = document.getElementById("consult_form");
-  form.reset();
-
-  jQuery("#myModal").modal('show');
-  return false;
-});  
-  
-</script>
-
-<script>
-      jQuery('#tel2').mask('+7(999) 999-99-99');
-    </script>
     {{end}}
 
     <!-- The javascript =============================== -->

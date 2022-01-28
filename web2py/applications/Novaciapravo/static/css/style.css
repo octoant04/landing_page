@@ -12,6 +12,12 @@
     
 }
 
+#blurry_text {
+     color: transparent;
+   text-shadow: 0 0 2px rgba(0,0,0,0.5);
+
+}
+
 .bg-light {
 	background-color: #F2F2F2 !important;
 }

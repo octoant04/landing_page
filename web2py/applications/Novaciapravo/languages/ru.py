@@ -242,6 +242,7 @@
 'Remember me (for 30 days)': 'Запомнить меня (на 30 дней)',
 'Request reset password': 'Request reset password',
 'Reset Password key': 'Сбросить ключ пароля',
+'Retrieve Password': 'Retrieve Password',
 'Review Body': 'Review Body',
 'Review Heading': 'Review Heading',
 'Review Service Name': 'Review Service Name',
@@ -325,4 +326,8 @@
 'Your username was emailed to you': 'Your username was emailed to you',
 'Ваш Номер': 'Ваш Номер',
 'Ваше Имя': 'Ваше Имя',
+'Войти': 'Войти',
+'Забыли пароль?': 'Забыли пароль?',
+'Зарегестрировать нового пользователя': 'Зарегестрировать нового пользователя',
+'Зарегистрироваться': 'Зарегистрироваться',
 }

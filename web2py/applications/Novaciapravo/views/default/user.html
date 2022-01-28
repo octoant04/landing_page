@@ -1,20 +1,20 @@
-{{extend 'layout.html'}}
+{{extend 'layout_light.html'}}
 
-<div class="row"> 
+<div class="row my-5"> 
   <div id="web2py_user_form" class="col-lg-6" style="background-color:white; margin: 0 auto 5px auto; box-shadow: 0 0 5px #a1a1a1; border-radius:5px;padding: 20px">
     <h2>
-      {{=T('Sign Up') if request.args(0) == 'register' else T('Log In') if request.args(0) == 'login' else T(request.args(0).replace('_',' ').title())}}
+      {{=T('Зарегестрировать нового пользователя') if request.args(0) == 'register' else T('Log In') if request.args(0) == 'login' else T(request.args(0).replace('_',' ').title())}}
     </h2>
     {{=form}}
     {{if request.args(0)=='login' and not 'register' in auth.settings.actions_disabled:}}
-    <a href="{{=URL('user/register')}}">{{=T('Register')}}</a>
+    <a href="{{=URL('user/register')}}">{{=T('Зарегистрироваться')}}</a>
     <br/>
     {{pass}}
     {{if request.args(0)=='login' and not 'retrieve_password' in auth.settings.actions_disabled:}}
-    <a href="{{=URL('user/retrieve_password')}}">{{=T('Lost your password?')}}</a>
+    <a href="{{=URL('user/retrieve_password')}}">{{=T('Забыли пароль?')}}</a>
     {{pass}}
     {{if request.args(0)=='register':}}
-    <a href="{{=URL('user/login')}}">{{=T('Login')}}</a>
+    <a href="{{=URL('user/login')}}">{{=T('Войти')}}</a>
     {{pass}}
   </div>
 </div>

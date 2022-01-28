@@ -9,7 +9,7 @@ def index():
     form1 = SQLFORM(db.register)
     if form1.process(session=None, formname='main').accepted:
         response.flash = 'form accepted'
-        redirect(URL('success'))
+        redirect(URL('post_success'))
     elif form1.errors:
         response.flash = 'form has errors'
     else:
@@ -18,7 +18,7 @@ def index():
     form2 = SQLFORM(db.email_problem)
     if form2.process(session=None, formname='email').accepted:
         response.flash = 'form accepted'
-        redirect(URL('email_success'))
+        redirect(URL('post_success'))
     elif form2.errors:
         response.flash = 'form has errors'
     else:
@@ -49,30 +49,51 @@ def reviews_list():
 def contacts():
     return dict()
 
+# ---- SERVICES ----
+
 def vipiska_egrul():
+    response.view = 'default/services/vipiska_egrul.html'
     return dict()
 
 def vipiska_egrn():
+    response.view = 'default/services/vipiska_egrn.html'
     return dict()
 
 def grazdanskie_dogovory():
+    response.view = 'default/services/grazdanskie_dogovory.html'
     return dict()
 
 def zashhita_prav_potrebitelej():
+    response.view = 'default/services/zashhita_prav_potrebitelej.html'
     return dict()
 
 def podgotovka_juridicheskih_documentov():
+    response.view = 'default/services/podgotovka_juridicheskih_documentov.html'
     return dict()
 
 def pismennaya_konsultacia():
+    response.view = 'default/services/pismennaya_konsultacia.html'
     return dict()
 
 def yuridicheskaya_ekspertiza():
+    response.view = 'default/services/yuridicheskaya_ekspertiza.html'
     return dict()
 
 def oznakomlenie_s_materialamy():
+    response.view = 'default/services/oznakomlenie_s_materialamy.html'
     return dict()
 
+
+# ---- SUCCESS PAGE ----
+def post_success():
+    response.view = 'default/redirect/post_success.html'
+    return dict()
+
+def review_success():
+    response.view = 'default/redirect/review_success.html'
+    return dict()
+
+@auth.requires_login()
 def database():
     grid1 = SQLFORM.grid(db.register, editable=True, deletable=True, details=True   )
     grid2 = SQLFORM.grid(db.consultation)
@@ -107,6 +128,7 @@ def new_consultation_ajax():
     if request.ajax:
         if form.accepted:
             return DIV("Спасибо за доверие, мы перезвоним Вам в ближайшее время!")
+            
         elif form.errors:
             response.flash("Что-то пошло не так")
     return dict(form=form)

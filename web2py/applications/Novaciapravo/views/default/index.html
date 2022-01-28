@@ -2,7 +2,7 @@
 
 {{block header}}
 
-<div class="bg-dark text-secondary px-4 py-2 pb-5 text-left" style="background-image: url('');">
+<div class="bg-dark text-secondary px-4 py-3 text-left" style="background-image: url('');">
   <div class="container">
     <div class="py-5">
         <div id="target"></div>
@@ -12,7 +12,7 @@
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
             <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
-                <textarea class="form-control" name="form_text" placeholder=" " id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
+                <textarea class="form-control" name="form_text" placeholder=" " row=2 id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
                 <label for="form_text">Опишите ситуацию</label>
                 <p class="text-muted my-0">Прим. Заказчик не выплачивает обещанный гонорар, как взыскать деньги?</p>
               </div>
@@ -44,21 +44,19 @@
 <div class="container-fluid d-inline-flex d-none d-lg-block pt-5 bg-light" style="height: 200px;">
   <div class="row m-0 px-5 position-relative top-0 start-50 translate-middle d-flex flex-row-reverse" style="height: 250px;">
     <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <img src="/Novaciapravo/static/images/group-icon.svg" alt="" style="padding: 10px;">
+          <img src="/Novaciapravo/static/images/target.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
           <h5 style="color: white;">Достоверно о перспективах</h5>
-          <p class="small">Курс посвящен конкретной проработке образа мышления, знаний и навыков агента, необходимых агенту на сегодняшнем рынке для создания предсказуемого повторяемого и прибыльного бизнеса</p>
+          <p class="small">Мы дорожим своей репутацией и тщательно оцениваем перспективы каждого дела. Все возможные сложности обговариваются на берегу. <br>Мы даем Вам всю информацию - Вы принимаете решение.</p>
     </div>
      <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <img src="/Novaciapravo/static/images/puzzle-piece-icon.svg" alt="" style="padding: 10px;">
-          <h5 style="color: white;">Индивидуальная подход</h5> 
-          <p class="small">Курс посвящен конкретной проработке образа мышления, знаний и навыков агента, необходимых агенту на сегодняшнем рынке для создания предсказуемого повторяемого и прибыльного бизнеса</p>
+          <img src="/Novaciapravo/static/images/puzzle.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
+          <h5 style="color: white;">Индивидуальный подход</h5> 
+          <p class="small">Мы гарантируем, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что мы не работаем по шаблону. У каждого дела есть свои нюансы и мы это понимаем.</p>
     </div>
     <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <div style="padding: 17px;">
-            <img src="/Novaciapravo/static/images/wallet2.svg" alt="" style="width: 36px; height: 36px;">
-          </div>
+          <img src="/Novaciapravo/static/images/rubles.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
           <h5 style="color: white;">Гибкая ценовая политика</h5>
-          <p class="small">Курс посвящен конкретной проработке образа мышления, знаний и навыков агента, необходимых агенту на сегодняшнем рынке для создания предсказуемого повторяемого и прибыльного бизнеса</p>
+          <p class="small">Наша система цен и рассрочек, позволяет каждому клиенту получить оптимальный для него уровень сервиса и качества.</p>
     </div>
   </div>
 </div>
@@ -71,7 +69,7 @@
         <div>
           <div id="person-inner">
             <div id="person-photo">
-              <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
+              <img src="/Novaciapravo/static/images/person.jpg" alt="..." style="max-width: 100%; ">
             </div>
             <div class="py-4">
             <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
@@ -129,6 +127,132 @@
         <!--<button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Полный список</button>-->
         
   </div>
+
+<!-- ---- START OF THE MOBILE CAROUSEL --->
+<div class="bg-dark d-lg-none pb-5">
+<div class="container">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active ">
+      <div class="d-flex justify-content-center">
+      <div class="p-2 " style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 82%; height: 246px;">
+          <img src="/Novaciapravo/static/images/target.png" alt="" style="width: 66px; height: 66px; padding: 5px;">
+          <h5 style="color: white;">Достоверно о перспективах</h5>
+          <p class="small">Мы дорожим своей репутацией и тщательно оцениваем перспективы каждого дела. <br>Мы даем Вам всю информацию - Вы принимаете решение.</p>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+      <div class="p-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 80%; height: 246px;">
+          <img src="/Novaciapravo/static/images/puzzle.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
+          <h5 style="color: white;">Индивидуальный подход</h5> 
+          <p class="small">Мы гарантируем, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что мы не работаем по шаблону.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+      <div class="p-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 80%; height: 246px;">
+          <img src="/Novaciapravo/static/images/rubles.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
+          <h5 style="color: white;">Гибкая ценовая политика</h5>
+          <p class="small">Наша система цен и рассрочек, позволяет каждому клиенту получить оптимальный для него уровень сервиса и качества.</p>
+       </div>
+       </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden" style="color: black;">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<!--  END --->
+
+<div class="container d-lg-none py-5">
+  <div class="pb-2">
+    <h1 id="block-heading">Наши ключевые практики</h1>
+  </div>
+  <div class="d-flex flex-column justify-content-center">
+
+    <div class="card my-3" style="max-width: 540px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Представительство в суде</h5>
+            <p class="card-text">Наши юристы обеспечат подготовку доказательств и их юридическую силу, грамотно изложат аргументацию, четко сформируют вашу позицию в суде. Защитим ваши интересы юридически и добьемся нужного результата.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3" style="max-width: 540px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Банкротство граждан</h5>
+            <p class="card-text">Поможем разобраться подходит ли Вам данная процедура и сопроводим до полного списания долгов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3" style="max-width: 540px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Защита прав потребителей</h5>
+            <p class="card-text">Обращаясь за юридической поддержкой при защите прав потребителя, вы увеличиваете шансы отстоять свои интересы и наказать правонарушителей. Будем рады помочь вам восстановить справедливость!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3" id="blurry_text" style="max-width: 540px;">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px; opacity: 25%;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Кредитное право</h5>
+            <p class="card-text">Кредитный юрист решит вопросы с банками и недобросовестными страховщиками. Поможем вернуть страховую премию по кредиту.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="py-4">
+      <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
+      </div>
+      <div class="mx-auto mt-3" style="position: relative;">
+      <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список услуг</button></a>
+    </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
   <div class="bg-dark text-secondary  py-5 text-left text-white" style="background-image: url('');">
     <div class="container py-5">
     <div class="accordion" id="accordionPanelsStayOpen">
@@ -193,12 +317,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16" style="margin-top: 10px; margin-right: 10px;">
           <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
         </svg>
-        
-        <div class="d-flex-column">
-          
-          <p class="float-start my-0">Скачать брошюру</p><br>
-          <h3>Юридическая практика ЮК «Новация»</h3> 
-          
+        <div>
+        <div class="d-flex flex-row">
+          <p class=" my-0">Скачать брошюру</p>
+        </div>
+        <div class="d-flex align-items-start">
+          <h4 style="text-align: start;">Юридическая практика ЮК «Новация»</h4> 
+        </div>
+        </div>
         </div>
         
       </div>
