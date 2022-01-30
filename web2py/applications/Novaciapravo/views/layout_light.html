@@ -63,11 +63,12 @@
     </div>
 
 
-    <a class="btn btn-primary d-lg-none" href="tel:89179377737" style="width: 100%; border-radius: 0; border: 0; background-color: white;">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone-forward-fill mt-2" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
-</svg></span>
-    </a>
+     <div class="container-fluid sticky-top bg-white py-2 d-lg-none" style="box-shadow: 0 4px 10px -10px gray;">
+      <div class="d-flex justify-content-evenly">
+        <div><a href="tel:89179377737" style="font-size: 14px; color: black; text-decoration: none; border-bottom: 1px dashed black;">+7(917) 937 77-37</a></div>
+        <div><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#consultModal" style="width:140px; height: 30px; font-size: 14px; line-height: 0; border-color: #ff4917; color: black;">Консультация</button></div>
+      </div>
+    </div>
     <!-- Masthead ===================================== -->
     {{block header}}
     {{end}}
@@ -84,77 +85,93 @@
     
     
             
+    <footer class="footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 order-1">
         
-    <div class="bg-dark text-secondary px-4 py-2 text-left">
-      <div class="container text-white">
-        <div class="row pt-5">
-          <div class="col-lg-auto" id="phone-footer">
-            <a href="tel:89179329139" class="fs-5" style="color: white; text-decoration: none;">+7(917) 932 91-39</a>
-            <div class="text-secondary">Общие вопросы</div>
-          </div>
-          <div class="col-lg-auto" id="phone-footer">
-            <a href="tel:89179377737" class="fs-5" style="color: white; text-decoration: none;">+7(917) 937 77-37</a>
-            <div class="text-secondary">Бесплатная консультация юриста</div>
-          </div>
-          <div class="col-lg-1 mx-4"></div>
-          <div class="col-lg-1">
-            <a href="https://www.instagram.com/jur_novacia/" target="_blank" style="color: white;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-instagram pt-2" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-            </svg></a>
-          </div>
-        </div>
+        <div class="footer-logo"><img src="/Novaciapravo/static/images/logo-svg-white.svg" width="220" height="100" alt="" class="d-inline-block align-text-top"></div>
       </div>
 
-    <div class="container">
-    <footer class="row py-5 my-5 border-top">
-      <div class="row">
+      <div class="col-lg-auto order-3 order-lg-2 pt-4">
+        <div class=" d-flex justify-content-between flex-wrap">
+          <div class="col-auto">
+              <ul class="footer-nav">
 
-      <div class="col-lg-auto">
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="/Novaciapravo/default/index" class="nav-link p-0 text-muted">Главная</a></li>
-          <li class="nav-item mb-2"><a href="/Novaciapravo/default/services" class="nav-link p-0 text-muted">Услуги</a></li>
-          <li class="nav-item mb-2"><a href="/Novaciapravo/default/reviews" class="nav-link p-0 text-muted">Отзывы</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">О компании</a></li>
-          <li class="nav-item mb-2"><a href="/Novaciapravo/default/contacts" class="nav-link p-0 text-muted">Контакты</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-auto">
-      </div>
-
-      <div class="col-lg-6"></div>
-
-      <div class="col-lg-4">
-        <div class="flex-column">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-            </svg>
-            <a href="" class="text-white fs-5 p-1" style="text-decoration: none;">ул. Николая Ершова, д.18, оф.302</a>
-          </div>
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-            </svg>
-            <a href="" class="text-white fs-5 p-1">info@novaciapravo.ru</a>
+                <li class="footer-nav__item footer-nav__item_bold">
+                  <a href="index">Главная</a>
+                </li>
+                <li class="footer-nav__item footer-nav__item_bold">
+                  <a href="services">Услуги</a>
+                </li>
+              
+              </ul>
           </div>
 
-          <p class="pt-3">Режим работы</p>
-          <div class="text-white">
-          <p class="m-0 p-0">Работаем до 18:00</p>
-          <p>Принимаем звонки до 21:00</p>
-          <p class="m-0 p-0">Пн-Сб:8:30-18:00</p>
-          <p>Вс: Выходной<p>
+          <div class="col-auto">
+              <ul class="footer-nav">
+                <li class="footer-nav__item footer-nav__item_bold">
+                  <a href="contacts">О компании</a>
+                </li>
+                
+                <li class="footer-nav__item ">
+                  <a href="reviews">Отзывы</a>
+                </li>
+              </ul>   
+          </div>
+
+          <div class="col-auto">
+              <ul class="footer-nav">
+                
+                <li class="footer-nav__item ">
+                  <a href="index">Вопрос-ответ</a>
+                </li>
+                <li class="footer-nav__item" >
+                  <a href="contacts">Контакты</a>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col mt-5 border-top pt-5">
-        <p class="text-muted">© 2022, Юридическая компания «Новация»</p>
-      </div>
-  </footer>
+      
+      <div class="col-sm-6 col-lg-3 order-2 order-lg-3 pt-4">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="footer-contacts__phone">
+              <a href="tel:89179377737" style="color: white;">8 (917) 937-77-37</a></div>
+            <div class="footer-contacts__soc">
+                
+              <a href="https://www.instagram.com/jur_novacia/" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.0544 0.00146484H13.9466C15.0764 0.00146484 16 0.925411 16 2.05522V13.9474C16 15.0769 15.0764 16.0002 13.9466 16.0002H2.0544C0.924587 16.0002 0 15.0768 0 13.9474V2.05522C0 0.925411 0.924587 0.00146484 2.0544 0.00146484ZM11.6558 1.77837C11.2591 1.77837 10.9355 2.10322 10.9355 2.4997V4.22312C10.9355 4.61976 11.2591 4.94386 11.6558 4.94386H13.4639C13.86 4.94386 14.1843 4.61976 14.1843 4.22312V2.4997C14.1843 2.10322 13.86 1.77837 13.4639 1.77837H11.6558ZM14.1911 6.76712H12.7834C12.9169 7.20312 12.9892 7.6629 12.9892 8.14093C12.9892 10.8013 10.7617 12.9591 8.01504 12.9591C5.26907 12.9591 3.04149 10.8013 3.04149 8.14093C3.04149 7.6629 3.11456 7.20312 3.24741 6.76712H1.77867V13.5262C1.77867 13.8762 2.06448 14.1609 2.41419 14.1609H13.5559C13.9059 14.1609 14.1911 13.8762 14.1911 13.5262V6.76712ZM8.01509 4.85298C6.24123 4.85298 4.80229 6.24648 4.80229 7.96701C4.80229 9.68578 6.24123 11.0803 8.01509 11.0803C9.78992 11.0803 11.2289 9.68578 11.2289 7.96701C11.2289 6.24642 9.78992 4.85298 8.01509 4.85298Z" fill="#879098"></path>
+                </svg>
+              </a>
+
+            </div>
+    </div>
+  </div>
 </div>
+</div>
+</footer>
+<div class="bottom bg-dark pt-4">
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center">
+      <div class="col-sm-auto order-1">
+          <div class="privacy">
+            <a href="privacy">Политика конфиденциальности</a>
+                     
+          </div>
+      </div>
+      <div class="col-sm-auto order-2">
+        <div class="copyright" style="color: white;">
+            © 2022, Юридическая компания «Новация»          
+        </div>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
 </div>
 <!-- Может позже. Добавить фиксированный нав для навигации к окнам "Заказкать звонок", "Оставить сообщение", "Оставить отзыв"
 <div class="fly-form">

@@ -8,19 +8,18 @@
         <div id="target"></div>
         <h1 class="display-5 fw-bold text-white">Юридические услуги в Казани</h1>
         <div class="col-lg-12 ">
-          <p class="fs-4 mb-4 text-white lead">Разовые и комлексные юридические услуги с гарантией результата.<br>
+          <p class="fs-5 mb-4 text-white lead">Разовые и комлексные юридические услуги с гарантией результата.<br>
             Воспользуйтесь формой ниже для того, чтобы получить <strong style="color: #ff4917">бесплатную</strong> консультацию по Вашей проблеме</p>
-            <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
+          <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
-                <textarea class="form-control" name="form_text" placeholder=" " row=2 id="form_text" style="height: 60px; min-height: 60px; max-height: 150px;"></textarea>
-                <label for="form_text">Опишите ситуацию</label>
-                <p class="text-muted my-0">Прим. Заказчик не выплачивает обещанный гонорар, как взыскать деньги?</p>
+                <textarea class="form-control" name="form_text" id="form_text" placeholder=" " style="min-height: 6.5rem; max-height: 150px;"></textarea>
+                <label for="form_text">Опишите ситуацию или задайте вопрос</label>
+                
               </div>
-              
-               <div class="form-floating col-sm-3 ">
+              <div class="form-floating col-sm-3 ">
                    <input type="text" name="name" class="form-control" placeholder=" " id="name" required>
                    <label for="name">Ваше имя</label>
-                </div>
+              </div>
               <div class="form-floating col-sm-3">
                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> 
                    <input type="tel" name="tel" class="form-control" placeholder=" " id="tel" required>
@@ -28,415 +27,378 @@
               </div>
               <div class="col">
                   <button class="btn btn-primary" type="submit" id="">Оставить заявку</button>
-                  <input type="hidden" name="_formname", value="main">
-                
+                  <input type="hidden" name="_formname", value="main">    
               </div>
           </form>
           <!--{{=LOAD('default', 'new_client.load', ajax=True)}}-->
-              <p class="fs-5 mt-4 mb-0">Нет времени заполнять форму?</p>
-              <p class="fs-5" >Свяжитесь с нами напрямую по номеру +7 (917) 937-77-37</p>
+          <div>
+              <p class=" mt-4 mb-0">Нет времени заполнять форму?</p>
+              <p>Свяжитесь с нами напрямую по номеру +7 (917) 937-77-37</p>
+          </div>
         </div>
     </div>
   </div>
 </div>
 
 
-<div class="container-fluid d-inline-flex d-none d-lg-block pt-5 bg-light" style="height: 200px;">
-  <div class="row m-0 px-5 position-relative top-0 start-50 translate-middle d-flex flex-row-reverse" style="height: 250px;">
-    <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
+<div class="container-fluid d-inline-flex d-none d-lg-block pt-5 bg-white" style="height: 200px;">
+  <div class="row m-0 position-relative top-0 start-50 translate-middle d-flex flex-row-reverse gap-3" style="height: 250px; padding-right: 20px;">
+    <div class="card p-0" style="background-color: #fb5023; width: 310px; height: 200px; border-radius: 10px; flex-direction: row">
+      <div class="row g-0">
+        <div class="col-md-4 p-3">
+          <img src="/Novaciapravo/static/images/rubles.png" class="img-fluid rounded-start" alt="..." style="width: 70px; height: 70px;">
+        </div>
+        <div class="col-md-8" style="background-color: #ff5b2e">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Гибкая ценовая политика</h5>
+            <p class="card-text" style="font-size: 13px;">Предоставляем рассрочку на все услуги до 12 месяцев.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="card p-0" style="background-color: #fb5023; width: 310px; height: 200px; border-radius: 10px; flex-direction: row">
+      <div class="row g-0">
+        <div class="col-md-4 p-3">
+          <img src="/Novaciapravo/static/images/puzzle.png" class="img-fluid rounded-start" alt="..." style="width: 70px; height: 70px;">
+        </div>
+        <div class="col-md-8" style="background-color: #ff5b2e">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Индивидуальный подход</h5>
+            <p class="card-text" style="font-size: 13px;">Персональный план для каждого дела. <br> Не работаем по шаблону.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card p-0" style="background-color: #fb5023; width: 310px; height: 200px; border-radius: 10px; flex-direction: row">
+      <div class="row g-0">
+        <div class="col-md-4 p-3">
+          <img src="/Novaciapravo/static/images/target.png" class="img-fluid rounded-start" alt="..." style="width: 70px; height: 70px;">
+        </div>
+        <div class="col-md-8" style="background-color: #ff5b2e">
+          <div class="card-body">
+            <h5 class="card-title" style="color: white;">Достоверно о перспективах</h5>
+            <p class="card-text" style="font-size: 13px;">Мы даем Вам всю информацию - Вы принимаете решение.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- 
+    <div class="col-2" style="background-color: #fb5023; border-radius: 10px; border:1px solid #212529; width: 300px;">
           <img src="/Novaciapravo/static/images/target.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
           <h5 style="color: white;">Достоверно о перспективах</h5>
           <p class="small">Мы дорожим своей репутацией и тщательно оцениваем перспективы каждого дела. Все возможные сложности обговариваются на берегу. <br>Мы даем Вам всю информацию - Вы принимаете решение.</p>
     </div>
-     <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <img src="/Novaciapravo/static/images/puzzle.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
-          <h5 style="color: white;">Индивидуальный подход</h5> 
-          <p class="small">Мы гарантируем, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что мы не работаем по шаблону. У каждого дела есть свои нюансы и мы это понимаем.</p>
-    </div>
-    <div class="col-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 300px;">
-          <img src="/Novaciapravo/static/images/rubles.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
-          <h5 style="color: white;">Гибкая ценовая политика</h5>
-          <p class="small">Наша система цен и рассрочек, позволяет каждому клиенту получить оптимальный для него уровень сервиса и качества.</p>
-    </div>
   </div>
-</div>
-<div class="bg-light py-5 d-none d-lg-block">
-<div class="container">
-  <h1 id="block-heading" class="display-5 fw-bold mb-5">Перечень предоставляемых услуг</h1>
-  <div class="row">
-    <div class="col-sm-3 my-5">
-      <div class="person">
-        <div>
-          <div id="person-inner">
-            <div id="person-photo">
-              <img src="/Novaciapravo/static/images/person.jpg" alt="..." style="max-width: 100%; ">
-            </div>
-            <div class="py-4">
-            <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
-            </div>
-          </div>
-      </div>
-      </div>
-    </div>
-
-    
-    <div class="col-sm-7 px-5 my-5">
-       <div class="col-12">
-        <div class="fs-4 lead">
-        <p>Наша компания предоставляет профессиональные услуги юриста:</p>
-        <ul class="mx-5">
-          <li>юридическим лицам всех форм собственности</li>
-          <li>индивидуальным предпринимателям</li>
-          <li>физическим лицам</li>
-        </ul>
-<!--
-        <div class="input-group rounded" >
-          <input type="search" class="form-control rounded" placeholder="Поиск по юридическим услугам" aria-label="Search" aria-describedby="search-addon"  />
-          <span class="input-group-text border-0" id="search-addon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff4917" class="bi bi-search" viewBox="0 0 16 16" style="margin-bottom: 5px;">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-          </span>
-        </div>
--->
-        <div class="d-flex my-5">
-          <input class="form-control me-2" type="search" placeholder="Поиск по юридическим услугам" aria-label="Search" style="height: 45px;">
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff4917" class="bi bi-search" viewBox="0 0 16 16" style="margin-bottom: 5px;">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg></a>
-        </div>
-        <div class="d-flex gap-5 fs-5">
-          <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
-            <a href="" style="text-decoration: none; color: black;">Представительство <br> в арбитражном суде</a>  
-          </div>
-          
-          <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
-            <a href="/Novaciapravo/default/podgotovka_juridicheskih_documentov" style="text-decoration: none; color: black;">Составление <br> юридических документов</a>  
-          </div>
-        </div>
-        <div>
-        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список</button></a>
-      </div>
-    </div>
-    </div>
-  </div>
-    </div>  
-  </div>
-
-          <!--Кнопка должна переводить на страницу с услугами-->
-        <!--<button class="btn btn-primary my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Полный список</button>-->
-        
-  </div>
-
-<!-- ---- START OF THE MOBILE CAROUSEL --->
-<div class="bg-dark d-lg-none pb-5">
-<div class="container">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active ">
-      <div class="d-flex justify-content-center">
-      <div class="p-2 " style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 82%; height: 246px;">
-          <img src="/Novaciapravo/static/images/target.png" alt="" style="width: 66px; height: 66px; padding: 5px;">
-          <h5 style="color: white;">Достоверно о перспективах</h5>
-          <p class="small">Мы дорожим своей репутацией и тщательно оцениваем перспективы каждого дела. <br>Мы даем Вам всю информацию - Вы принимаете решение.</p>
-      </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center">
-      <div class="p-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 80%; height: 246px;">
-          <img src="/Novaciapravo/static/images/puzzle.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
-          <h5 style="color: white;">Индивидуальный подход</h5> 
-          <p class="small">Мы гарантируем, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что мы не работаем по шаблону.</p>
-      </div>
-    </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="d-flex justify-content-center">
-      <div class="p-2" style="background-color: #fb5023; border-radius: 2px; border:2px solid #212529; width: 80%; height: 246px;">
-          <img src="/Novaciapravo/static/images/rubles.png" alt="" style="width: 69px; height: 69px; padding: 10px;">
-          <h5 style="color: white;">Гибкая ценовая политика</h5>
-          <p class="small">Наша система цен и рассрочек, позволяет каждому клиенту получить оптимальный для него уровень сервиса и качества.</p>
-       </div>
-       </div>
-      </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden" style="color: black;">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-</div>
-<!--  END --->
-
-<div class="container d-lg-none py-5">
-  <div class="pb-2">
-    <h1 id="block-heading">Наши ключевые практики</h1>
-  </div>
-  <div class="d-flex flex-column justify-content-center">
-
-    <div class="card my-3" style="max-width: 540px;">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Представительство в суде</h5>
-            <p class="card-text">Наши юристы обеспечат подготовку доказательств и их юридическую силу, грамотно изложат аргументацию, четко сформируют вашу позицию в суде. Защитим ваши интересы юридически и добьемся нужного результата.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card my-3" style="max-width: 540px;">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Банкротство граждан</h5>
-            <p class="card-text">Поможем разобраться подходит ли Вам данная процедура и сопроводим до полного списания долгов.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card my-3" style="max-width: 540px;">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px;">
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Защита прав потребителей</h5>
-            <p class="card-text">Обращаясь за юридической поддержкой при защите прав потребителя, вы увеличиваете шансы отстоять свои интересы и наказать правонарушителей. Будем рады помочь вам восстановить справедливость!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card my-3" id="blurry_text" style="max-width: 540px;">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/Novaciapravo/static/images/coin.svg" class="img-fluid rounded-start" alt="..." style="width: 36px; height: 36px; opacity: 25%;">
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">
-            <h5 class="card-title">Кредитное право</h5>
-            <p class="card-text">Кредитный юрист решит вопросы с банками и недобросовестными страховщиками. Поможем вернуть страховую премию по кредиту.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <div class="py-4">
-      <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
-      </div>
-      <div class="mx-auto mt-3" style="position: relative;">
-      <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3" type="button">Полный список услуг</button></a>
-    </div>
-    </div>
-
-
-
-  </div>
+--> 
 </div>
 
 
-  <div class="bg-dark text-secondary  py-5 text-left text-white" style="background-image: url('');">
-    <div class="container py-5">
-    <div class="accordion" id="accordionPanelsStayOpen">
-  <div class="accordion-item bg bg-dark">
-    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-      <button class="accordion-button bg-dark text-white border-top" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        <span class="display-5">Юридическая компания</span>
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-      <div class="accordion-body">
-        Сотрудники <strong>Юридической компании «Новация»</strong> оказывают гражданам и компаниям (ИП, ООО и др.) в Казани квалифицированную юридическую помощь в широком правовом спектре. <br>
-
-        С одинаковой долей ответственности даем консультации по несложным вопросам покупки и продажи недвижимости. Возьмемся за сопровождение непростой многоступенчатой сделки регистрации права собственности на квартиру, офис, землю или дом, освободив вас от общения с государственными служащими и представителями противоположной стороны. Предлагаем юридические услуги высочайшего класса физическим и юридическим лицам. Профессионально, грамотно, с перевесом в вашу пользу организуем защиту прав вашей организации в суде. Решим массу других задач, лежащих в рамках российского Законодательства. <br> 
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item bg-dark">
-    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-      <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-         <span class="display-5">Ваши гарантии</span>
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-      <div class="accordion-body">
-        <strong>Мы гарантируем</strong>, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что:
-        <ul>
-          <li>в компании работают высококвалифицированные сотрудники с богатой юридической практикой;</li>
-          <li>каждый работник фирмы оказывает юридические услуги в своем направлении. Детализированный подход увеличивает эффективность, сокращает сроки;</li>
-          <li>безусловная конфиденциальность;</li>
-          <li>используем индивидуальный подход, основанный на выработке уникальной стратегии;</li>
-          <li>предлагаем лучшую цену на все виды юридической помощи.</li>
-        </ul>
-        <p>Стоимость услуг зависит от сложности доверенного нам дела: ознакомиться с тарифами можно на сайте компании или по телефону.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item bg-dark border-bottom">
-    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-      <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-         <span class="display-5">Ваша выгода в наших юридических услугах</span>
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-      <div class="accordion-body">
-        <strong>Мы превратим ваши расходы на юридические услуги в сэкономленные средства и время.</strong>
-        <p>Услуги юриста сэкономят невосполнимый ресурс – время <br>Грамотный человек может изучить юридическую литературу и составить претензию с исковым заявлением. Но он вряд ли сделает это быстро. Он может не учесть профессиональные нюансы. Помощь профессионала ускорит процесс.</p>
-          <p>Есть сложные случаи, когда требуются: юридический анализ договоров, проведение экспертиз, обжалования действий судебных органов <br> Эти процедуры может осуществить только юрист с опытом в соответствующей области права.</p>
-          <p>Гражданин вправе требовать не только возмещение прямых убытков от приобретения некачественного или небезопасного товара, но и взыскивать моральный ущерб. <br> Обосновать моральный вред тоже убедительнее получается у профессионалов.</p>
-          <p>Защита в суде может оказаться бесплатной для потребителя, ведь стоимость юридической помощи реально взыскать с виновной стороны</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-  </div>
-    <div class="d-grid gap-2 col-12 mx-auto">
-      <a href="/Novaciapravo/static/uploads/File.pdf?attachment">
-     <button class="btn btn-primary" id="btn-services" type="button" style="height: 120px;">
-      <div class="d-flex justify-content-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16" style="margin-top: 10px; margin-right: 10px;">
-          <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
-        </svg>
-        <div>
-        <div class="d-flex flex-row">
-          <p class=" my-0">Скачать брошюру</p>
-        </div>
-        <div class="d-flex align-items-start">
-          <h4 style="text-align: start;">Юридическая практика ЮК «Новация»</h4> 
-        </div>
-        </div>
-        </div>
-        
-      </div>
-      
-     </button>
-     </a>
-    </div>
-    <!--Section: Contact v.2-->
-    <div class="container">
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 id="block-heading" class="h1-responsive font-weight-bold display-5 fw-bold my-5">Свяжитесь с нами!</h2>
-    <!--Section description-->
-    <p class="w-responsive mx-auto lead mb-5">У Вас есть вопросы? Можете задать их нам <br>Отвечаем в день обращения</p>
-
+<div class="bg-white py-5 d-none d-lg-block">
+  <div class="container">
+    <h1 id="block-heading" class="display-5 fw-bold mb-5">Перечень предоставляемых услуг</h1>
     <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form action="#" enctype="multipart/form-data" method="post">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="l_name" class="form-control">
-                            <label for="name" class="">Ваше Имя</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="email" id="_email" name="email" placeholder="my@example.ru" class="form-control">
-                            <label for="_email" class="">Ваша Почта</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="problem" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Опишите ситуацию</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            
-            <div class=" pt-5">
-                <button class="btn btn-primary" type="submit">Отправить</button>
-                <input type="hidden" name="_formname" value="email">
-                
-            </div>
-            
-            </form>
-           
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-
-
-
-
-        </div>
-        <!--Grid column-->
-        <div class="row pt-5">
-          <div class="col-12">
-            <p class="text-muted small">Отправляя свой адрес электронной почты, вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку нами данных в соответствии с Заявлением о конфиденциальности. Вы можете в любое время отозвать свое согласие на обработку персональных данных, отправив нам сообщение по электронной почте.
-            </p>
+      <div class="col-sm-3 my-5">
+        <div class="person">
+        <div>
+        <div id="person-inner">
+          <div id="person-photo">
+            <img src="/Novaciapravo/static/images/person.jpg" alt="..." style="max-width: 100%; ">
+          </div>
+          <div class="py-4">
+            <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Получить Консультацию</button>
           </div>
         </div>
-        <h5 class="lead text-center border-top fs-1">Либо</h1>
-    </div>
+        </div>
+        </div>
+      </div>
 
     
-        <!-- /.main__request--block -->
-    </div>
+      <div class="col-sm-7 px-5 my-5">
+        <div class="col-12">
+          <div class="fs-5 ">
+            <p>Наша компания предоставляет профессиональные услуги юриста:</p>
+            <ul class="mx-5">
+              <li>юридическим лицам</li>
+              <li>индивидуальным предпринимателям</li>
+              <li>физическим лицам</li>
+            </ul>
+            <div class="d-flex my-5">
+              <input class="form-control me-2" type="search" placeholder="Поиск по юридическим услугам" aria-label="Search" style="height: 45px;">
+              <a href="/Novaciapravo/default/services"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff4917" class="bi bi-search" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></a>
+            </div>
+            <div class="d-flex gap-4 fs-5">
+              <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
+                <a href="" style="text-decoration: none; color: black;">Представительство <br> в арбитражном суде</a>  
+              </div>
+            
+              <div class="pb-4" style="border-bottom: 2px solid #ff4917;" >
+                <a href="/Novaciapravo/default/podgotovka_juridicheskih_documentov" style="text-decoration: none; color: black;">Составление <br> юридических документов</a>  
+              </div>
+
+              <div class=" d-flex align-items-end">
+                <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3 " type="button">Полный список</button></a>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </div>  <!-- container -->
+</div> <!-- bg-dark -->
+
+
+<!-- MOBILE CONTENT -->
+<div class="container row py-5 gap-4 d-lg-none mx-auto">
+  <h1 id="block-heading">Услуги</h1>
+        <div class="row mx-auto py-3  shadow">
+          <div class="col-3">
+            <img src="/Novaciapravo/static/images/mace.png" alt="Списание долгов и банкротство в Казани" style="width: 50px; height: 50px;">
+          </div>
+          <div class="col-9">
+            <div>Представительство в суде</div>
+            <div class="pt-3">
+              <a href="predstavitelstvo_v_grazhdanskom_sude" class="float-end">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-auto py-3 shadow">
+          <div class="col-3">
+            <img src="/Novaciapravo/static/images/coin.svg" alt="Списание долгов и банкротство в Казани" style="width: 50px; height: 50px;">
+          </div>
+          <div class="col-9">
+            <div>Списание долгов и банкротство</div>
+            <div class="pt-3">
+              <a href="/services/dlya-fizicheskikh-lits/bankrotstvo-fizicheskikh-lits2/" class="float-end">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-auto py-3 shadow">
+          <div class="col-3">
+            <img src="/Novaciapravo/static/images/packet.png" alt="Списание долгов и банкротство в Казани" style="width: 50px; height: 50px;">
+          </div>
+          <div class="col-9">
+            <div>Защита прав потребителей</div>
+            <div class="pt-3">
+              <a href="zashhita_prav_potrebitelej" class="float-end">Подробнее</a>
+            </div>
+          </div>
+        </div>        
+        
+        <a href="/Novaciapravo/default/services"><button class="btn btn-primary my-3"  style="width: 100%;" type="button">Полный список услуг</button></a>  
 </div>
 
-</section>
-</div>
-<!--Section: Contact v.2-->
 
-<div class="modal fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="consultModalLabel">Оставить заявку</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="bg-light py-5">
+  <div class="container">
+    <h1 id="block-heading">Почему нам доверяют</h1>
+    <div class="row">
+      <div class="accordion accordion-flush pt-5 col-md-7" id="accordionFlushExample">
+        <div class="accordion-item mb-2 shadow">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              + Бесплатные консультации
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Уже на консультации Вы получаете план ближайших действий по своей ситуации. Даже если Вы передумаете обращаться к нам, то сможете получите необходимую Вам информацию. Почему наши консультации бесплатны? По нашей статистике, в 90% случаев обратившиеся заключают договор. Это связано напрямую с качеством предоставляемой информации. </div>
+          </div>
+        </div>
+        <div class="accordion-item my-2 shadow">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              + Прозрачные услуги
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Их выполнение обеспечивается договором, который вы можете изучить не только у нас в офисе, но и взять с собой домой для ознакомления. </div>
+          </div>
+        </div>
+        <div class="accordion-item shadow">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              + Индивидуальный подход
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Максимально подробно изучаем каждое дело и выявляем все нюансы, чтобы подобрать соответствующее решение проблемы.</div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body" style="text-align: center;">
-        {{=LOAD('default', 'new_consultation_ajax.load', ajax=True)}}
+      <div class="col-md-4 d-none d-lg-block">
+            <div class="service-image">
+              <div>
+                <div id="helper-photo-inner">
+                  <div id="service-photo">
+                    <img src="/Novaciapravo/static/images/insta3.jpeg" class="img-thumbnail rounded-start" alt="..." style=" ">
+                  </div>
+                </div>
+            </div>
+          </div>
       </div>
-      <div class="modal-footer">
-        <p class="text-muted small">Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку персональных данных</p>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      <div class="col-md-4 pt-5 d-lg-none">
+        <div id="#helper-photo-inner" style="background-image: url(/Novaciapravo/static/images/insta3.jpeg); background-size: cover; width: 100%; height: 300px;"></div>
+        
       </div>
     </div>
   </div>
 </div>
 
+
+<div class="bg-dark text-secondary  py-5 text-left text-white" style="background-image: url('');">
+  <div class="container py-5">
+    <div class="accordion" id="accordionPanelsStayOpen">
+      <div class="accordion-item bg bg-dark">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button bg-dark text-white border-top" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <span class="display-5">Юридическая компания</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            Сотрудники <strong>Юридической компании «Новация»</strong> оказывают гражданам и компаниям (ИП, ООО и др.) в Казани квалифицированную юридическую помощь в широком правовом спектре. <br>
+
+            С одинаковой долей ответственности даем консультации по несложным вопросам покупки и продажи недвижимости. Возьмемся за сопровождение непростой многоступенчатой сделки регистрации права собственности на квартиру, офис, землю или дом, освободив вас от общения с государственными служащими и представителями противоположной стороны. Предлагаем юридические услуги высочайшего класса физическим и юридическим лицам. Профессионально, грамотно, с перевесом в вашу пользу организуем защиту прав вашей организации в суде. Решим массу других задач, лежащих в рамках российского Законодательства. <br> 
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+             <span class="display-5">Ваши гарантии</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Мы гарантируем</strong>, что каждый клиент получит тот результат, на который был нацелен при обращении в фирму, потому что:
+            <ul>
+              <li>в компании работают высококвалифицированные сотрудники с богатой юридической практикой;</li>
+              <li>каждый работник фирмы оказывает юридические услуги в своем направлении. Детализированный подход увеличивает эффективность, сокращает сроки;</li>
+              <li>безусловная конфиденциальность;</li>
+              <li>используем индивидуальный подход, основанный на выработке уникальной стратегии;</li>
+              <li>предлагаем лучшую цену на все виды юридической помощи.</li>
+            </ul>
+            <p>Стоимость услуг зависит от сложности доверенного нам дела: ознакомиться с тарифами можно на сайте компании или по телефону.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item bg-dark border-bottom">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+             <span class="display-5">Ваша выгода в наших юридических услугах</span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Мы превратим ваши расходы на юридические услуги в сэкономленные средства и время.</strong>
+            <p>Услуги юриста сэкономят невосполнимый ресурс – время <br>Грамотный человек может изучить юридическую литературу и составить претензию с исковым заявлением. Но он вряд ли сделает это быстро. Он может не учесть профессиональные нюансы. Помощь профессионала ускорит процесс.</p>
+              <p>Есть сложные случаи, когда требуются: юридический анализ договоров, проведение экспертиз, обжалования действий судебных органов <br> Эти процедуры может осуществить только юрист с опытом в соответствующей области права.</p>
+              <p>Гражданин вправе требовать не только возмещение прямых убытков от приобретения некачественного или небезопасного товара, но и взыскивать моральный ущерб. <br> Обосновать моральный вред тоже убедительнее получается у профессионалов.</p>
+              <p>Защита в суде может оказаться бесплатной для потребителя, ведь стоимость юридической помощи реально взыскать с виновной стороны</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="d-grid gap-2 col-12 mx-auto">
+    <a href="/Novaciapravo/static/uploads/File.pdf?attachment">
+      <button class="btn btn-primary" id="btn-services" type="button" style="height: 120px;">
+        <div class="d-flex justify-content-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16" style="margin-top: 10px; margin-right: 10px;">
+            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+          </svg>
+          <div>
+            <div class="d-flex flex-row">
+              <p class=" my-0">Скачать брошюру</p>
+            </div>
+            <div class="d-flex align-items-start">
+              <h4 style="text-align: start;">Юридическая практика ЮК «Новация»</h4> 
+            </div>
+          </div>
+        </div>   
+     </button>
+    </a>
+  </div>
+    <!--Section: Contact v.2-->
+<div class="bg-light pt-5">
+  <div class="container">
+    <section class="pb-4">
+
+      <!--Section heading-->
+      <h2 id="block-heading" class="display-5 fw-bold my-5">Свяжитесь с нами!</h2>
+      <!--Section description-->
+      <p class="mb-5">У Вас есть проблема, но не знаете как её решить?<br>Наши специалисты готовы дать Вам любую, даже самую подробную, юридическую консультацию совершенно бесплатно.</p>
+
+      <div class="row">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+              <form action="#" enctype="multipart/form-data" method="post">
+                  <!--Grid row-->
+                  <div class="row">
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" id="name" name="l_name" class="form-control" >
+                              <label for="name" class="">Ваше Имя</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="email" id="_email" name="email" placeholder="my@example.ru" class="form-control" >
+                              <label for="_email" class="">Ваша Почта</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+                  </div>
+
+                  <!--Grid row-->
+                  <div class="row">
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                          <div class="md-form">
+                              <textarea type="text" id="message" name="problem" rows="2" class="form-control md-textarea"></textarea>
+                              <label for="message">Опишите ситуацию или задайте вопрос</label>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+
+              <div class=" pt-5">
+                  <button class="btn btn-primary" type="submit">Отправить</button>
+                  <input type="hidden" name="_formname" value="email">
+              </div>
+              </form>            
+          </div>
+      </div>
+          <!--Grid column-->
+          <div class="row pt-5">
+            <div class="col-12">
+              <p class="text-muted small">Отправляя свой адрес электронной почты, вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку нами данных в соответствии с Заявлением о конфиденциальности. Вы можете в любое время отозвать свое согласие на обработку персональных данных, отправив нам сообщение по электронной почте.
+              </p>
+            </div>
+          </div>
+          </div>
+  </section>
+</div>
+</div>
+<h5 class="lead text-center border-top fs-1 py-5">Либо</h5>
+<!--Section: Contact v.2-->
 
 {{end}}
 

@@ -1,3 +1,4 @@
+
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #ff4917 !important;
     border-color: #ff4917;
@@ -70,11 +71,35 @@
     
 }
 
+.footer-nav {
+    font-size: 14px;
+    
+    list-style: none;
+}
+
+.footer-nav__item a {
+    color: white;
+}
+
 #service-photo-inner::before {
 	content: '';
     display: block;
     width: 234px;
     height: 330px;
+    background: #ff4917;
+    border: 1px solid #ff4917;
+    
+    position: absolute;
+    top: -70px;
+    right: -80px;
+    
+}
+
+#helper-photo-inner::before {
+    content: '';
+    display: block;
+    width: 330px;
+    height: 234px;
     background: #ff4917;
     border: 1px solid #ff4917;
     

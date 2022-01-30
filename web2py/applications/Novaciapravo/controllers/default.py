@@ -49,7 +49,14 @@ def reviews_list():
 def contacts():
     return dict()
 
+def privacy():
+    return dict()
+
 # ---- SERVICES ----
+
+def predstavitelstvo_v_grazhdanskom_sude():
+    response.view = 'default/services/predstavitelstvo_v_grazhdanskom_sude.html'
+    return dict()
 
 def vipiska_egrul():
     response.view = 'default/services/vipiska_egrul.html'
