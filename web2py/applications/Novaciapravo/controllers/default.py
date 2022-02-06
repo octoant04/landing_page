@@ -90,6 +90,13 @@ def oznakomlenie_s_materialamy():
     response.view = 'default/services/oznakomlenie_s_materialamy.html'
     return dict()
 
+def vklyuchenie_v_reestr_trebovanij_kreditorov():
+    response.view = 'default/services/vklyuchenie_v_reestr_trebovanij_kreditorov.html'
+    return dict()
+
+def vzyskanie_dolgov():
+    response.view = 'default/services/vzyskanie_dolgov.html'
+    return dict()
 
 # ---- SUCCESS PAGE ----
 def post_success():

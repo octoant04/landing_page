@@ -1,0 +1,82 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+ <div class="container py-5">
+        	<nav aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item"><a class="text-muted" style="text-decoration: none;" href="/Novaciapravo/default/index">Главная</a></li>
+			    <li class="breadcrumb-item"><a class="text-muted" style="text-decoration: none;" href="/Novaciapravo/default/services">Услуги</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Представительство в суде по гражданским делам в Казани</li>
+			  </ol>
+			</nav>
+		<div class="row clearfix">
+			<div class="col-md-7 float-md-end mb-3 ms-md-3">
+        		<h1 id="block-heading" class="display-5 fw-bold mb-5">Представительство в суде по гражданским делам в Казани</h1>
+        		<p>Опытные юристы возьмут на себя все этапы разрешения семейных, страховых, земельных арбитражных и других гражданско-правовых споров в Казани. Уверенно владеем российским законодательством и в 95% добиваемся положительного решения.</p>
+        		<div class="row">
+        			<div class="col-md-5">
+        				<p class=" border-top fw-bold">Стоимость услуги от:</p>
+        				<br>
+        				<div class="row">
+        					<div class="col-md-12">
+        						<h1 class="display-5 fw-bold" style="color: #ff4917;">15 000 ₽</h1>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-7">
+        				<p class=" border-top fw-bold">Вносите оплату по частям.<br>Оформите рассрочку до:</p>
+        				<div class="row">
+        					<div class="col-md-auto">
+		        				<h1 class="display-5 fw-bold" style="color: #ff4917;">12 месяцев</h1>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="row">
+	        		<div class="col-md-2">
+	        			<button type="button" class="btn btn-primary my-5" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px;">Консультация</button>
+	        		</div>
+	        		
+	        	</div>
+        	</div>
+        	
+        	<div class="col-4 col-md-4 d-none d-lg-block">
+        		<div class="service-image">
+			        <div>
+			          <div id="service-photo-inner">
+			            <div id="service-photo">
+			              <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
+			            </div>
+			          </div>
+			      </div>
+			      </div>
+        	</div>
+        </div>
+        <div class="border-top">
+        	<div class="my-5">
+        	<p>Услуги юриста сэкономят невосполнимый ресурс – время <br>Грамотный человек может изучить юридическую литературу и составить претензию с исковым заявлением. Но он вряд ли сделает это быстро. Он может не учесть профессиональные нюансы. Помощь профессионала ускорит процесс.</p>
+        	<p>Есть сложные случаи, когда требуются: юридический анализ договоров, проведение экспертиз, обжалования действий судебных органов <br> Эти процедуры может осуществить только юрист с опытом в соответствующей области права.</p>
+        	<p>Гражданин вправе требовать не только возмещение прямых убытков от приобретения некачественного или небезопасного товара, но и взыскивать моральный ущерб. <br> Обосновать моральный вред тоже убедительнее получается у профессионалов.</p>
+        	<p>Защита в суде может оказаться бесплатной для потребителя, ведь стоимость юридической помощи реально взыскать с виновной стороны</p>
+        	</div>
+        </div>
+    
+{{end}}
+
+<div class="modal fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultModalLabel">Оставить заявку</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        {{=LOAD('default', 'new_consultation_ajax.load', ajax=True)}}
+      </div>
+      <div class="modal-footer">
+        <p class="text-muted small">Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку персональных данных</p>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

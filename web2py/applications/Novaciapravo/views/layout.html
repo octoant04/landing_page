@@ -311,7 +311,7 @@
   </footer>
 </div>
 </div>
-<!-- Может позже. Добавить фиксированный нав для навигации к окнам "Заказкать звонок", "Оставить сообщение", "Оставить отзыв"
+ Может позже. Добавить фиксированный нав для навигации к окнам "Заказкать звонок", "Оставить сообщение", "Оставить отзыв"
 <div class="fly-form">
 </div>
 -->
@@ -339,6 +339,16 @@
   </div>
 </div>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202844011-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-202844011-1');
+</script>
 
 <script>
 jQuery('#consult_form').submit(function() {
@@ -392,7 +402,7 @@ jQuery('#consult_form').submit(function() {
         {{=LOAD('default', 'new_consultation_ajax.load', ajax=True)}}
       </div>
       <div class="modal-footer">
-        <p class="text-muted small">Нажимая кнопку "Отправить", вы подтверждаете, что ознакомились с Заявлением о конфиденциальности и даете согласие на обработку персональных данных</p>
+        <p class="text-muted small">Нажимая кнопку "Оставить заявку", вы подтверждаете, что <a href="privacy" target="_blank">ознакомились с Заявлением о конфиденциальности и даете согласие на обработку персональных данных</a></p>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
       </div>
     </div>

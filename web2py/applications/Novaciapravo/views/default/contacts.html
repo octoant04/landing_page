@@ -44,8 +44,13 @@
 			              <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
 			            </div>
 			          </div>
+                                  <div class="py-4">
+                                    <button type="button" class="btn btn-primary lead" data-bs-toggle="modal" data-bs-target="#recModal" style="height: 48px; width: 100%; border-radius: 0px; background-color: transparent !important; color: black;">Реквизиты Компании</button>
+                                  </div>
+                                </div>
 			      </div>
 			    </div>
+                            
         	</div>
 
             
@@ -53,3 +58,24 @@
 </div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4486.16460585738!2d49.15518492279516!3d55.79180876175971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead76dc2e18b3%3A0x4093a1369d39e610!2z0YPQuy4g0J3QuNC60L7Qu9Cw0Y8g0JXRgNGI0L7QstCwLCAxOCwg0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9LCA0MjAwOTc!5e0!3m2!1sru!2sru!4v1642974180698!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" class="my-5" loading="lazy"></iframe>
 {{end}}
+
+<div class="modal fade" id="recModal" tabindex="-1" aria-labelledby="myrecModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title px-3" id="myrecModalLabel">Реквизиты</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Общество с ограниченной ответственностью «Новация»</p>
+        <p>ИНН 1619007638 <br>ОГРН 1211600015857 </p>
+        <p>р/с 40702 810 4005 6000 2440<br>в ф-л Приволжский ПАО Банк "ФК Открытие"</p>
+        <p>БИК 042282881</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary float-start" data-bs-dismiss="modal">Закрыть</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
