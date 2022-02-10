@@ -1,7 +1,7 @@
 {{extend 'layout.html'}}
 
 {{block header}}
- <div class="container py-5">
+ <div class="container pt-5">
         	<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
 			    <li class="breadcrumb-item"><a class="text-muted" style="text-decoration: none;" href="/Novaciapravo/default/index">Главная</a></li>
@@ -10,16 +10,20 @@
 			  </ol>
 			</nav>
 		<div class="row clearfix">
-			<div class="col-md-7 float-md-end mb-3 ms-md-3">
+			<div class="col-md-12 col-lg-7 float-md-end mb-3">
         		<h1 id="block-heading" class="display-5 fw-bold mb-5">Взыскание долгов с оплатой по факту взыскания в Казани</h1>
-        		<p>Опытные юристы помогут взыскать долги с организаций, только вступивших или уже находящихся на стадии банкротства. Мы гарантированно внесем Ваши требования по невыполненным обязательствам  в реестр требований кредиторов.</p>
+        		<p><strong>Долги должны возвращаться!</strong><br>Опытные юристы возьмут на себя решение всех вопросов по взысканию дебиторской задолженности с физических лиц, ИП и юридических лиц:</p>
+                <ul>
+                    <li>В досудебном порядке;</li><li>В рамках судебного разбирательства;</li><li>На стадии исполнительного производства.</li>
+                </ul>
+
         		<div class="row">
         			<div class="col-md-5">
         				<p class=" border-top fw-bold">Стоимость услуги от:</p>
         				<br>
         				<div class="row">
         					<div class="col-md-12">
-        						<h1 class="display-5 fw-bold" style="color: #ff4917;">5 000 ₽</h1>
+        						<h1 class="display-5 fw-bold text-md-start text-center" style="color: #ff4917;">4 500 ₽</h1>
         					</div>
         				</div>
         			</div>
@@ -27,40 +31,327 @@
         				<p class=" border-top fw-bold">Вносите оплату по частям.<br>Оформите рассрочку до:</p>
         				<div class="row">
         					<div class="col-md-auto">
-		        				<h1 class="display-5 fw-bold" style="color: #ff4917;">12 месяцев</h1>
+		        				<h1 class="display-5 fw-bold text-md-start text-center" style="color: #ff4917;">12 месяцев</h1>
 		        			</div>
         				</div>
         			</div>
         		</div>
-        		<div class="row">
-	        		<div class="col-md-2">
-	        			<button type="button" class="btn btn-primary my-5" data-bs-toggle="modal" data-bs-target="#consultModal" style="height: 48px;">Консультация</button>
+        		<div class="d-flex justify-content-lg-start justify-content-center">
+	        		<div class="col-md-2 ">
+	        			<button type="button" class="btn btn-primary my-5 " data-bs-toggle="modal" data-bs-target="#consultModal" style="width: 220px; height: 48px;">Получить консультацию</button>
 	        		</div>
 	        		
 	        	</div>
         	</div>
         	
-        	<div class="col-4 col-md-4 d-none d-lg-block">
+        	<div class="col-md-4 d-none d-lg-flex">
         		<div class="service-image">
-			        <div>
+			      
 			          <div id="service-photo-inner">
 			            <div id="service-photo">
 			              <img src="/Novaciapravo/static/images/person.jpg" class="img-thumbnail rounded-start" alt="..." style="height: ">
 			            </div>
 			          </div>
-			      </div>
+			    
 			      </div>
         	</div>
         </div>
-        <div class="border-top">
-        	<div class="my-5">
-        	<p>Услуги юриста сэкономят невосполнимый ресурс – время <br>Грамотный человек может изучить юридическую литературу и составить претензию с исковым заявлением. Но он вряд ли сделает это быстро. Он может не учесть профессиональные нюансы. Помощь профессионала ускорит процесс.</p>
-        	<p>Есть сложные случаи, когда требуются: юридический анализ договоров, проведение экспертиз, обжалования действий судебных органов <br> Эти процедуры может осуществить только юрист с опытом в соответствующей области права.</p>
-        	<p>Гражданин вправе требовать не только возмещение прямых убытков от приобретения некачественного или небезопасного товара, но и взыскивать моральный ущерб. <br> Обосновать моральный вред тоже убедительнее получается у профессионалов.</p>
-        	<p>Защита в суде может оказаться бесплатной для потребителя, ведь стоимость юридической помощи реально взыскать с виновной стороны</p>
-        	</div>
+</div>
+
+<!--d-flex justify-content-center gap-3-->
+<div class="bg-light pb-5">
+<div class="container">
+    <h1 id="block-heading" class="py-5">Работая с нами Вы можете быть уверены в:</h1>
+<div class="d-flex flex-wrap gap-5 justify-content-center ">
+    <div class="card text-center" style="background-color: #fb5023; max-width: 200px;   ">
+        <center><img src="/Novaciapravo/static/images/deadline.png" class="card-img-top p-2" alt="..." style="width: 70px; height: 70px;"></center>
+        <div class="card-body" style="background-color: #ff5b2e">  
+            <h5 class="card-title" style="color: white;">Соблюдении сроков</h5>
+            <p class="card-text" style="font-size: 13px;">Мы выполним работу точно в сроки, названные в начале сотрудничества</p>
+          </div>
         </div>
-    
+      
+    <div class="card text-center" style="background-color: #fb5023; max-width: 200px; ">
+        <center><img src="/Novaciapravo/static/images/dialog.png" class="card-img-top p-2" alt="..." style="width: 70px; height: 70px;"></center>
+        <div class="card-body" style="background-color: #ff5b2e">  
+            <h5 class="card-title" style="color: white;">Полной открытости</h5>
+            <p class="card-text" style="font-size: 13px;">Мы будем своевременно информировать Вас о движении Вашего дела</p>
+          </div>
+        </div>
+
+    <div class="card text-center" style="background-color: #fb5023; max-width: 200px;  ">
+        <center><img src="/Novaciapravo/static/images/rubles.png" class="card-img-top p-2" alt="..." style="width: 70px; height: 70px;"></center>
+        <div class="card-body" style="background-color: #ff5b2e">  
+            <h5 class="card-title" style="color: white;">Возмещении расходов</h5>
+            <p class="card-text" style="font-size: 13px;">Работая по договору, Вы имеете право возместить свои судебные расходы по ст. 103 ГПК РФ/ст. 110 АПК РФ.<br><span style="color: white;">Подадим заявление на возмещение бесплатно</span></p>
+          </div>
+        </div>
+
+    <div class="card text-center" style="background-color: #fb5023; max-width: 200px; ">
+        <center><img src="/Novaciapravo/static/images/target2.png" class="card-img-top p-2" alt="..." style="width: 70px; height: 70px;"></center>
+        <div class="card-body" style="background-color: #ff5b2e">  
+            <h5 class="card-title" style="color: white;">Достижении результата</h5>
+            <p class="card-text" style="font-size: 13px;">Мы выигрываем все дела, за который берёмся.<br>Если в деле нет перспектив, мы изначально Вам скажем.<br><span style="color: white;">Проведем первичный анализ бесплатно</span></p>
+          </div>
+        </div>
+    </div>
+    <!--
+    <p class="pt-5">Мы имеем огромный опыт представления интересов наших клиентов как в арбитражных судах так и в судах общей юрисдикции. За плечами наших сотрудников стоят многолетний опыт работы, а также высокая квалификация, подтвержденная ведущими вузами республики. <br>Мы уверены в своих силах и даем максимально прозрачную гарантию на результат работы.</p>
+-->
+</div>
+</div>
+ 
+
+<div class="bg-dark">
+    <div class="container py-5">
+        <h1 id="block-heading" class="text-white pb-5">Этапы нашей работы</h1>
+        <div class="d-flex flex-column justify-content-evenly gap-5">
+            <div id="stages" class="d-flex text-white">
+                <div id="number">
+                    <div id="number-inner">
+                        <h1 class="display-1" style="padding-left: 1rem; padding-right: 3rem">1</h1>
+                    </div>
+                </div>
+                <div>
+                    <h3>Переговоры</h3>
+                    <ul>
+                        <li>Проведем переговоры с должником;</li>
+                        <li>Составим и направим досудебную претензию.</li>
+                    </ul>
+                    <p>Грамотная стратегия и отработанная на практике техника переговоров и коммуникаций приведет к достижению результата.</p>
+                </div>
+            </div>
+
+            <div id="stages" class="d-flex text-white">
+                <div id="number">
+                    <div id="number-inner">
+                        <h1 class="display-1" style="padding-left: 1rem; padding-right: 3rem">2</h1>
+                    </div>
+                </div>
+                <div>
+                    <h3>Судебное разбирательство</h3>
+                    <ul>
+                        <li>предъявим иск и представим ваши интересы в арбитражном суде или суде общей юрисдикции любого субъекта РФ;</li>
+                        <li>включимся в реестр требований кредиторов, если ваш должник банкрот.</li>
+                    </ul>
+                    <p>Наш многолетний опыт и знание всех особенностей судебных процедур обеспечат быстрое получение исполнительного документа.</p>
+                </div>
+            </div>
+
+            <div id="stages" class="d-flex text-white">
+                <div id="number">
+                    <div id="number-inner">
+                        <h1 class="display-1" style="padding-left: 1rem; padding-right: 3rem">3</h1>
+                    </div>
+                </div>
+                <div>
+                    <h3>Исполнительное производство</h3>
+                    <ul>
+                        <li>подадим исполнительный документ в службу судебных приставов или найдем счета самостоятельно;</li>
+                        <li>проконтролируем действия судебных приставов, либо сотрудников банка.</li>
+                    </ul>
+                    <p>Эффективное взаимодействие с судебными приставами и выбор наиболее оптимального пути взыскания ускорит процесс возврата денег.</p>
+                </div>
+            </div>
+
+            <div id="stages" class="d-flex text-white">
+                <div id="number">
+                    <div id="number-inner">
+                        <h1 class="display-1" style="padding-left: 1rem; padding-right: 3rem">4</h1>
+                    </div>
+                </div>
+                <div>
+                    <h3>Банкротство</h3>
+                    <p>Юристы будут представлять ваши интересы, оценивать работу арбитражного управляющего и пресекать нарушения, помогут оспорить мошеннические сделки должника и продать имущество. При необходимости мы оспорим решение суда в законном порядке.</p>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="bg-light">
+<div class="container py-5">
+    <h1 class="">Промедление может означать утрату <br>возможного к взысканию имущества</h1>
+    <p>Оставьте заявку сейчас и мы <span style="color: #ff4917;">бесплатно</span> оценим перспективы Вашего дела.</p>
+    <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
+              <div class="form-floating col-sm-10">
+                <textarea class="form-control" name="form_text" id="form_text" placeholder=" " style="min-height: 6.5rem; max-height: 150px;"></textarea>
+                <label for="form_text" class="text-muted">Опишите ситуацию</label>
+                
+              </div>
+              <div class="form-floating col-sm-3 ">
+                   <input type="text" name="name" class="form-control" placeholder=" " id="name" required>
+                   <label for="name" class="text-muted">Ваше имя</label>
+              </div>
+              <div class="form-floating col-sm-3">
+                   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> 
+                   <input type="tel" name="tel" class="form-control" placeholder=" " id="tel" required>
+                   <label class="form-label text-muted" for="tel">Ваш номер<label>
+              </div>
+              <div class="col-sm-3">
+                  <button class="btn btn-primary shadow" style=" width: 100%; border-radius: 5px; background-color: #ff4917 !important; color: white;" type="submit" id="">Оставить заявку</button>
+                  <input type="hidden" name="_formname", value="main">    
+              </div>
+          </form>
+</div>
+</div>
+
+<!--
+
+<div class="bg-light">
+ <div class="container py-5">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner bg-white">
+        <div class="carousel-item active">
+          <div class="carousel-screen">
+            <div class="carousel-content">
+                <div>
+                <h3>Взыскание задолженности в размере более 1 млн. рублей</h3>
+                <p>В пользу нашего клиента - собственника помещения - с арендатора взыскана задолженность по нескольким договорам аренды. В результате правильного составления документов судебный процесс прошел в 2 судебных заседания.</p>
+                </div>
+                <div class="d-flex justify-content-start">
+                <a href="#" target="_blank" class="d-flex flex-column text-decoration-none" style="align-items: center;">
+                    <img src="/Novaciapravo/static/images/pdf.png" style="width: 60px; height: 60px;">
+                    <div>Решение суда</div>
+                    <div class="text-muted">10.1 MB</div>
+                </a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" >
+            <div class="carousel-screen">
+              <div class="carousel-content">
+                    <div>
+                    <h3>Взыскание задолженности в размере более 1 млн. рублей</h3>
+                    <p>В пользу нашего клиента - собственника помещения - с арендатора взыскана задолженность по нескольким договорам аренды. В результате правильного составления документов судебный процесс прошел в 2 судебных заседания.</p>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                    <a href="#" target="_blank" class="d-flex flex-column text-decoration-none" style="align-items: center;">
+                        <img src="/Novaciapravo/static/images/pdf.png" style="width: 60px; height: 60px;">
+                        <div>Решение суда</div>
+                        <div class="text-muted">10.1 MB</div>
+                    </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+           <div class="carousel-screen">
+              <div class="carousel-content">
+                    <div>
+                    <h3>Взыскание задолженности в размере более 1 млн. рублей</h3>
+                    <p>В пользу нашего клиента - собственника помещения - с арендатора взыскана задолженность по нескольким договорам аренды. В результате правильного составления документов судебный процесс прошел в 2 судебных заседания.</p>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                    <a href="#" target="_blank" class="d-flex flex-column text-decoration-none" style="align-items: center;">
+                        <img src="/Novaciapravo/static/images/pdf.png" style="width: 60px; height: 60px;">
+                        <div>Решение суда</div>
+                        <div class="text-muted">10.1 MB</div>
+                    </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+</div>
+
+-->
+
+<div class="container py-5">
+    <h1 id="block-heading">Часто задаваемые вопросы</h1>
+    <div class="row">
+      <div class="accordion accordion-flush pt-5 col-md-12 col-lg-7" id="accordionFlushExample">
+        <div class="accordion-item mb-2 shadow">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             Вы можете взыскать дебиторскую задолженность с физического лица?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Да, но на данный момент, мы работаем только с исками к физическим лицам от 100 тыс. рублей. </div>
+          </div>
+        </div>
+
+        <div class="accordion-item shadow">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               Вы можете помочь если мой должник банкрот?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Мы готовы предоставить Вам услуги по сопровождению вашего требования в рамках дела о банкротстве от включения его в реестр требований кредиторов до процесса распределения конкурсной массы должника.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item my-2 shadow">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+             Есть ли гарантии возврата долга?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">100% гарантию мы не можем дать по объективным причинам, это надо понимать. В то же время мы не работаем с безнадежными долгами, поскольку тратим и время, и деньги. В любом случае после первоначального анализа перспектив мы сразу поясним какие есть шансы потенциальному заказчику. </div>
+          </div>
+        </div>
+
+        <div class="accordion-item my-2 shadow">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Какие условия оплаты?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">В большинстве случаев мы работаем по факту взыскания - заказчик получил деньги, перечислил нам процент, либо перевел зафиксированную в договоре сумму. Если предполагаются объективные расходы по делу, информируем об этом заказчика при заключении договора, согласовываем с ним бюджет. Эти суммы незначительны, но они помогают оперативнее решить поставленные задачи.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item shadow">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            Вы вернете мне деньги если проиграете суд по моему делу?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Мы сделаем все возможное, чтобы получить положенное вам. Если решение суда вас не устроит наши юристы его обжалуют. Никаких дополнительных оплат не понадобится</div>
+          </div>
+        </div>
+
+
+
+     
+
+       
+      </div>
+      <div class="col-md-4 d-none d-lg-block">
+            <div class="service-image">
+              <div>
+                <div id="helper-photo-inner">
+                  <div id="service-photo">
+                    <img src="/Novaciapravo/static/images/insta3.jpeg" class="" alt="..." style="max-width: 100%;">
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<h5 class="lead text-center border-top fs-1 py-5">Есть сомнения или вопросы?</h5>
+
 {{end}}
 
 <div class="modal fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
@@ -80,3 +371,8 @@
     </div>
   </div>
 </div>
+
+
+<script>
+jQuery('#tel').mask('+7(999) 999-99-99');
+</script>

@@ -96,6 +96,16 @@ def vklyuchenie_v_reestr_trebovanij_kreditorov():
 
 def vzyskanie_dolgov():
     response.view = 'default/services/vzyskanie_dolgov.html'
+
+    form1 = SQLFORM(db.register)
+    if form1.process(session=None, formname='main').accepted:
+        response.flash = 'form accepted'
+        redirect(URL('post_success'))
+    elif form1.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
+
     return dict()
 
 # ---- SUCCESS PAGE ----

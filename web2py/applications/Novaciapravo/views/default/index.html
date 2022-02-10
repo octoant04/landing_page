@@ -13,7 +13,7 @@
           <form class="row g-3" id="myform" action="#" enctype="multipart/form-data" method="post">
               <div class="form-floating col-sm-10">
                 <textarea class="form-control" name="form_text" id="form_text" placeholder=" " style="min-height: 6.5rem; max-height: 150px;"></textarea>
-                <label for="form_text">Опишите ситуацию или задайте вопрос</label>
+                <label for="form_text">Опишите ситуацию</label>
                 
               </div>
               <div class="form-floating col-sm-3 ">
@@ -98,7 +98,7 @@
 
 <div class="bg-white py-5 d-none d-lg-block">
   <div class="container">
-    <h1 id="block-heading" class="display-5 fw-bold mb-5">Перечень предоставляемых услуг</h1>
+    <h1 id="block-heading" class="fw-bold mb-5">Перечень предоставляемых услуг</h1>
     <div class="row">
       <div class="col-sm-3 my-5">
         <div class="person">
@@ -210,7 +210,7 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Уже на консультации Вы получаете план ближайших действий по своей ситуации. Даже если Вы передумаете обращаться к нам, то сможете получите необходимую Вам информацию. Почему наши консультации бесплатны? По нашей статистике, в 90% случаев обратившиеся заключают договор. Это связано напрямую с качеством предоставляемой информации. </div>
+            <div class="accordion-body">Уже на консультации Вы получаете план ближайших действий по своей ситуации. Даже если Вы передумаете обращаться к нам, то сможете получите необходимую Вам информацию. <br><br>Почему наши консультации бесплатны? По нашей статистике, в 90% случаев обратившиеся заключают договор. Это связано напрямую с качеством предоставляемой информации. </div>
           </div>
         </div>
         <div class="accordion-item my-2 shadow">
@@ -239,7 +239,7 @@
               <div>
                 <div id="helper-photo-inner">
                   <div id="service-photo">
-                    <img src="/Novaciapravo/static/images/insta3.jpeg" class="img-thumbnail rounded-start" alt="..." style=" ">
+                    <img src="/Novaciapravo/static/images/insta3.jpeg" class="" alt="..." style="max-width: 100%;">
                   </div>
                 </div>
             </div>
@@ -256,11 +256,12 @@
 
 <div class="bg-dark text-secondary  py-5 text-left text-white" style="background-image: url('');">
   <div class="container py-5">
-    <div class="accordion" id="accordionPanelsStayOpen">
+    <h1 id="block-heading" class="fw-bold text-white">О нас и наших преимуществах</h1>
+    <div class="accordion pt-5" id="accordionPanelsStayOpen">
       <div class="accordion-item bg bg-dark">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
           <button class="accordion-button bg-dark text-white border-top" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          <span class="display-5">Юридическая компания</span>
+          <span class="fs-4 lead">Юридическая компания</span>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -275,7 +276,7 @@
       <div class="accordion-item bg-dark">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
           <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-             <span class="display-5">Ваши гарантии</span>
+             <span class="fs-4 lead">Ваши гарантии</span>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -296,7 +297,7 @@
       <div class="accordion-item bg-dark border-bottom">
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
           <button class="accordion-button bg-dark text-white border-top collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-             <span class="display-5">Ваша выгода в наших юридических услугах</span>
+             <span class="fs-4 lead">Ваша выгода в наших юридических услугах</span>
           </button>
         </h2>
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -338,7 +339,7 @@
     <section class="pb-4">
 
       <!--Section heading-->
-      <h2 id="block-heading" class="display-5 fw-bold my-5">Свяжитесь с нами!</h2>
+      <h1 id="block-heading" class="fw-bold my-5">Свяжитесь с нами!</h1>
       <!--Section description-->
       <p class="mb-5">У Вас есть проблема, но не знаете как её решить?<br>Наши специалисты готовы дать Вам любую, даже самую подробную, юридическую консультацию совершенно бесплатно.</p>
 
@@ -350,18 +351,18 @@
                   <div class="row">
                       <!--Grid column-->
                       <div class="col-md-6">
-                          <div class="md-form mb-0">
-                              <input type="text" id="name" name="l_name" class="form-control" >
-                              <label for="name" class="">Ваше Имя</label>
+                          <div class="form-floating mb-3">
+                              <input type="text" id="name" name="l_name" placeholder=" " class="form-control" >
+                              <label for="name" class="text-muted">Ваше Имя</label>
                           </div>
                       </div>
                       <!--Grid column-->
 
                       <!--Grid column-->
                       <div class="col-md-6">
-                          <div class="md-form mb-0">
+                          <div class="form-floating mb-3">
                               <input type="email" id="_email" name="email" placeholder="my@example.ru" class="form-control" >
-                              <label for="_email" class="">Ваша Почта</label>
+                              <label for="_email" class="text-muted">Ваша Почта</label>
                           </div>
                       </div>
                       <!--Grid column-->
@@ -371,9 +372,9 @@
                   <div class="row">
                       <!--Grid column-->
                       <div class="col-md-12">
-                          <div class="md-form">
-                              <textarea type="text" id="message" name="problem" rows="2" class="form-control md-textarea"></textarea>
-                              <label for="message">Опишите ситуацию или задайте вопрос</label>
+                          <div class="form-floating">
+                              <textarea type="text" id="message" name="problem" placeholder=" " rows="2" class="form-control md-textarea"></textarea>
+                              <label for="message" class="text-muted">Опишите ситуацию или задайте вопрос</label>
                           </div>
                       </div>
                   </div>
