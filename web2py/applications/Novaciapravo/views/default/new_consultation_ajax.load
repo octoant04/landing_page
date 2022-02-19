@@ -1,13 +1,14 @@
 {{=form.custom.begin}}
 	<div class="px-5">
 	<div class="form-floating mb-3">
-	  <input type="string" class="form-control" id="name" name="name" placeholder="name@example.com">
-	  <label for="name">Ваше Имя</label>
+	  <input type="string" class="form-control" id="name" name="name" placeholder=" ">
+	  <label class="text-muted" for="name">Ваше Имя</label>
 	</div>
 	<div class="form-floating mb-3">
-	  <input type="tel" class="form-control" id="tel2" name="tel" placeholder="Password">
-	  <label for="tel">Ваш Номер</label>
+	  <input type="tel" class="form-control" id="tel2" name="tel" placeholder=" ">
+	  <label class="text-muted" for="tel">Ваш Номер</label>
 	</div>
+		<p class="text-muted small text-start">Нажимая на кнопку, <a href="privacy" target="_blank"> вы соглашаетесь с правилами обработки персональных данных </a></p>
 	</div>
 	<button class="btn btn-primary" type="submit" id="">Оставить заявку</button>
 {{=form.custom.end}}

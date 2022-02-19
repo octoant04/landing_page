@@ -140,18 +140,13 @@ def grid():
     grid = SQLFORM.smartgrid(db[tablename], args=[tablename], deletable=False, editable=False)
     return dict(grid=grid)
 
-# ---- Embedded wiki (example) ----
-def wiki():
-    auth.wikimenu() # add the wiki to the menu
-    return auth.wiki() 
-
 # ---- Action for login/register/etc (required for auth) -----
 def new_consultation_ajax():
     form = SQLFORM(db.consultation, formstyle='divs')
     form.process()
     if request.ajax:
         if form.accepted:
-            return DIV("Спасибо за доверие, мы перезвоним Вам в ближайшее время!")
+            redirect(URL('post_success'), client_side=True)
             
         elif form.errors:
             response.flash("Что-то пошло не так")
@@ -161,7 +156,7 @@ def new_consultation_ajax():
 def new_consultation():
     form = SQLFORM(db.consultation)
     if form.accepts(request, formname=None):
-        return DIV("Message posted")
+        redirect(URL('post_success'))
     elif form.errors:
         return TABLE(*[TR(k, v) for k, v in form.errors.items()])
     
