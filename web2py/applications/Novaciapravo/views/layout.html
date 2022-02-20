@@ -37,8 +37,8 @@
     {{end}} 
   <body>
     <!-- Navbar ======================================= -->
-    <nav id="top" class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-0" style="display: block; box-shadow: 1px -1px 5px grey; ">
-      <div class="container-fluid bg-light d-none d-sm-block">
+    <nav id="header-wrap" class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-0" style="transition: top 0.5s; display: block; box-shadow: 1px -1px 5px grey; ">
+      <div id="header1" class="container-fluid bg-light d-none d-sm-block">
         <div class="container">
         <div class="row">
           <div class="col 6 small my-2 py-1 d-inline-block" style="color: #414141;"> 
@@ -51,10 +51,10 @@
         </div>
       </div>
     </div>
-      <div class="container container-fluid" style="width: 100%;">
+      <div class="container container-fluid" style="width: 100%; padding-top: 5px; padding-bottom: 5px;">
         <div>
-        <a class="navbar-brand" href="/Novaciapravo/default/index">
-          <img src="/Novaciapravo/static/images/logo-svg.svg" width="220" height="100" alt="" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="/Novaciapravo/default/index" st>
+          <img src="/Novaciapravo/static/images/logo-svg.svg" width="220" height="75" alt="" class="d-inline-block align-text-top">
         </a>
         </div>
 
@@ -83,6 +83,7 @@
                 <div class="py-5">
                   <a class="nav-link active" aria-current="page" href="/Novaciapravo/default/index">Главная</a>
                   <a class="nav-link" href="/Novaciapravo/default/services">Услуги</a>
+                  <a class="nav-link" href="/Novaciapravo/default/poleznaya_informacia">Полезная информация</a>
                   <a class="nav-link" href="/Novaciapravo/default/reviews">Отзывы</a>
                   <a class="nav-link" href="/Novaciapravo/default/contacts">Контакты</a>
                 </div>
@@ -101,7 +102,7 @@
         <div class="container d-flex justify-content-evenly">
         <a id="nav-link" class="nav-link active" aria-current="page" href="/Novaciapravo/default/index">Главная</a>
         <a id="nav-link" class="nav-link" href="/Novaciapravo/default/services">Услуги</a>
-        <a id="nav-link" class="nav-link" href="">Полезная информация</a>
+        <a id="nav-link" class="nav-link" href="poleznaya_informacia">Полезная информация</a>
         <a id="nav-link" class="nav-link" href="/Novaciapravo/default/reviews">Отзывы</a>
         <a id="nav-link" class="nav-link" href="/Novaciapravo/default/contacts">Контакты</a>
         </div>
@@ -116,7 +117,7 @@
   <!-- END --> 
     <!-- Masthead ===================================== -->
     <div class="main_indent"> 
-      <div class="d-none d-md-block" style="height: 70px;"></div>
+      <div class="d-none d-md-block" style="height: 55px;"></div>
     {{block header}}
     
     {{end}}
@@ -187,11 +188,7 @@
 <footer class="footer bg-dark">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-lg-4 order-1">
-        
-        <div class="footer-logo"><img src="/Novaciapravo/static/images/logo-svg-white.svg" width="220" height="100" alt="" class="d-inline-block align-text-top"></div>
-      </div>
-
+      
       <div class="col-lg-auto order-3 order-lg-2 pt-4">
         <div class=" d-flex justify-content-between flex-wrap">
           <div class="col-auto">
@@ -317,6 +314,18 @@ jQuery('#consult_form').submit(function() {
   return false;
 });
 
+</script>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 210 || document.documentElement.scrollTop > 210) {
+    document.getElementById("header-wrap").style.top = "-46px";
+  } else {
+    document.getElementById("header-wrap").style.top = "0 ";
+  }
+}
 </script>
 
 <script>

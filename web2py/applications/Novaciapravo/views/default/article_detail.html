@@ -1,0 +1,41 @@
+{{extend 'layout.html'}}
+
+<div class="container py-5">
+	<div class="row">
+	<div class="col-sm-8">
+		<h1 class="py-4">{{=(article and article.article_heading) or 'Page does not exist'}}</h1>
+
+		{{if article:}}
+		<div class="lead fs-4 pb-5">{{=article.article_summary}}</div>
+
+		<div>{{=MARKMIN(article.article_body)}}</div>
+	</div>
+	<div class="col-sm-3 py-5">
+		<h4>Автор</h4>
+		<div class="bg-light p-4" style="border-radius: 15px;">
+			<div class="row">
+				<div class="col-10">
+					<p class="fw-bold mb-0">{{=article.article_author}}</p>
+					<p class="text-muted">Ведущий юрист</p>
+					<div class="d-flex small">
+						<p>Телефон:</p><a href="tel:89179377737">+7 (917) 937 77-37</a>
+					</div>
+					<div class="d-flex small">
+						<p>E-mail:</p><a href="">info@novaciapravo.ru</a>
+					</div>
+				</div>
+				<div class="col-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+					 	<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+						 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+					</svg>
+				</div>
+					
+				
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+{{pass}}

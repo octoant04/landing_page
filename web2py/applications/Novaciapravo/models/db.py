@@ -6,7 +6,7 @@
 # -------------------------------------------------------------------------
 from gluon.contrib.appconfig import AppConfig
 from gluon.tools import Auth
-
+import datetime; now=datetime.date.today()
 # -------------------------------------------------------------------------
 # This scaffolding model makes your app work on Google App Engine too
 # File is released under public domain and you can use without limitations
@@ -176,7 +176,17 @@ db.define_table('email_problem',
 db.define_table('consultation',
     Field('name', label="Ваше Имя", requires=IS_NOT_EMPTY()),
     Field('tel', label="Ваш Номер",requires=IS_NOT_EMPTY()))
+
+db.define_table('article',
+    Field('article_heading'),
+    Field('article_summary', length=516),
+    Field('article_body', 'text'),
+    Field('article_author'),
+    Field('created_on', 'date', default=now))
+
+
 # -------------------------------------------------------------------------
 # after defining tables, uncomment below to enable auditing
 # -------------------------------------------------------------------------
 # auth.enable_record_versioning(db)
+

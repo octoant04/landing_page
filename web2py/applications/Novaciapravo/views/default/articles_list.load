@@ -1,0 +1,16 @@
+
+{{for article in articles:}}
+<div class="col-12 col-lg-8 border-bottom">
+	<div class="p-4">
+		<div class="d-flex flex-column">
+			<a href="article_detail?id={{=article.id}}" style="color: #ff4917;"> <h5 class="py-1 fw-bold">{{=article.article_heading}}</h5></a>
+			<p class="small text-muted">{{=article.created_on}}</p>
+		</div>
+		
+ 		
+  		<p>{{=MARKMIN(article.article_summary)}}</p>
+ 		
+ 		<a href="article_detail?id={{=article.id}}" style="color: #ff4917;"> <p class="py-1">Подробнее -><p></a>
+ 	</div>
+</div>
+{{pass}}

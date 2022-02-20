@@ -1,0 +1,68 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+
+
+
+<div class="container mt-5 py-5"> 
+	<div class="border-bottom "><h1 class="fw-bold">Последние статьи</h1></div>
+
+
+	<div class="d-flex flex-column flex-wrap gap-5" id="articles">
+    {{=LOAD('default', 'articles_list.load', ajax=True, target="articles", content='')}}
+    </div>
+</div>
+
+
+
+<!-- MODAL FOR ARTICLES TEST -->
+
+{{end}}
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content p-4">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Новая статья</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="#" enctype="multipart/form-data" method="post">
+<!--Modal Content -->
+      <div class="modal-body d-grid gap-3">
+	 	<div>
+		    <label for="message" class="form-label fw-bold">Заголовок статьи</label>
+	        <input type="text" name="article_heading" placeholder="" class="form-control md-textarea" required>
+        </div>
+        <div>
+        	<label for="message" class="form-label fw-bold">Краткое содержание</label>
+	        <input type="text" name="article_summary" placeholder="" class="form-control md-textarea" required>
+        </div>
+        <div>
+        	<label for="message" class="form-label fw-bold">Текст статьи</label>
+        	<textarea type="text" name="article_body" placeholder="" rows="2" class="form-control md-textarea" required></textarea>
+        </div>
+        <div class="row">
+        	<div class="col-md-4">
+        		<label for="message" class="form-label fw-bold">Имя</label required>
+	        	<input type="text"  name="article_author" class="form-control md-textarea">
+        	</div>
+        	<div class="col-md-4">
+        		<label for="message" class="form-label fw-bold">Email (для ответа)</label>
+	        	<input type="email" name="created_on" placeholder="my@example.ru" class="form-control md-textarea" required>
+        	</div>
+        </div>
+        
+    </div>
+	 
+<!-- END -->
+      <div class="modal-footer">
+      	<button type="submit" class="btn btn-primary">Отправить</button>
+      	<input type="hidden" name="_formname" value="article" />
+      	</form>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style=" width: 184px; height: 58px;">Закрыть окно</button>
+        </div>
+      
+    </div>
+  </div>
+</div>

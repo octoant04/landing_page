@@ -46,6 +46,33 @@ def reviews_list():
     reviews = db(query).select()
     return dict(reviews=reviews)
 
+def articles_list():
+    query = db.article.id > 0
+    articles = db(query).select()
+    return dict(articles=articles)
+
+
+def poleznaya_informacia():
+    form = SQLFORM(db.article)
+    if form.process(session=None, formname='article').accepted:
+        response.flash = 'form accepted'
+        redirect(URL('review_success'))
+    elif form.errors:
+        response.flash = 'form has errors'
+    else:
+        response.flash = 'please fill the form'
+
+
+    # Note: no form instance is passed to the view
+    return dict()
+
+def article_detail():
+    id=request.vars.id
+    articles=db(db.article.id==id).select()
+    if not len(articles): redirect(URL('index'))
+
+    return dict(article=articles[0])
+
 def contacts():
     return dict()
 
@@ -123,7 +150,8 @@ def database():
     grid2 = SQLFORM.grid(db.consultation)
     grid3 = SQLFORM.grid(db.review, deletable=True, details=True)
     grid4 = SQLFORM.grid(db.email_problem, deletable=True)
-    return dict(grid1=grid1, grid2=grid2, grid3=grid3, grid4=grid4)
+    grid5 = SQLFORM.grid(db.article, deletable=True)
+    return dict(grid1=grid1, grid2=grid2, grid3=grid3, grid4=grid4, grid5=grid5)
 
 # ---- API (example) -----
 
